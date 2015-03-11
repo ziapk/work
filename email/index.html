@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <!-- This is a simple example template that you can edit to create your own custom templates -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <!-- Facebook sharing information tags -->
+        <meta property="og:title" content="*|MC:SUBJECT|*">
+        
+        <title>Responsive Email Template</title>
+		
+	<style type="text/css">
+		#outlook a{
+			padding:0;
+		}
+		body{
+			width:100% !important;
+			line-height: 1.3;
+		}
+		body{
+			-webkit-text-size-adjust:none;
+		}
+		body{
+			margin:0;
+			padding:0;
+		}
+		img{
+			border:none;
+			font-size:14px;
+			font-weight:bold;
+			height:auto;
+			line-height:1.3;
+			outline:none;
+			text-decoration:none;
+			text-transform:capitalize;
+		}
+		#backgroundTable{
+			height:100% !important;
+			margin:0;
+			padding:0;
+			width:100% !important;
+		}
+	/*
+	@tab Page
+	@section background color
+	@tip Set the background color for your email. You may want to choose one that matches your company's branding.
+	@theme page
+	*/
+		body,.backgroundTable{
+			/*@editable*/background-color:#edf0f1;
+			/*@editable*/font-family:sans-serif;
+		}
+	/*
+	@tab Page
+	@section email width
+	@tip Set Width for your email.
+	*/
+		.container{
+			/*@editable*/width: 600px;
+		}
+	/*
+	@tab Page
+	@section heading 1
+	@tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+	@theme heading1
+	*/
+		h1,.h1{
+			/*@editable*/color:inherit;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:25px;
+			/*@editable*/font-weight:normal;
+			/*@editable*/line-height:1.3;
+			margin-top:5px;
+			margin-bottom:15px;
+			/*@editable*/text-align:inherit;
+		}
+	/*
+	@tab Page
+	@section heading 2
+	@tip Set the styling for all second-level headings in your emails.
+	@theme heading2
+	*/
+		h2,.h2{
+			/*@editable*/color:inherit;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:20px;
+			/*@editable*/font-weight:normal;
+			/*@editable*/line-height:1.3;
+			margin-top:5px;
+			margin-bottom:15px;
+			/*@editable*/text-align:inherit;
+		}
+	/*
+	@tab Page
+	@section heading 3
+	@tip Set the styling for all third-level headings in your emails.
+	@theme heading3
+	*/
+		h3,.h3{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:26px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:1.3;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Page
+	@section heading 4
+	@tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+	@theme heading4
+	*/
+		h4,.h4{
+			/*@editable*/color:#202020;
+			display:block;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:22px;
+			/*@editable*/font-weight:bold;
+			/*@editable*/line-height:1.3;
+			margin-bottom:10px;
+			/*@editable*/text-align:left;
+		}
+	/*
+	/*
+	@tab Page
+	@section email links
+	@tip Set colors of links for your email.
+	*/
+		a,a:link{
+			/*@editable*/color: #ed485c;
+			/*@editable*/text-decoration: none;
+		}
+		a:hover{
+			/*@editable*/color: #ed485c;
+			/*@editable*/text-decoration: underline;
+		}
+	/*
+	@tab Top Header
+	@section preheader style
+	@tip Set the background color for your email's preheader area.
+	@theme page
+	*/
+		.preheaderContent{}
+		.preheaderContent .preheaderContent-left{
+			/*@editable*/background:#ed485c;
+			/*@editable*/width:60px;}
+		.preheaderContent .preheaderContent-left img{
+			width: 100%;}
+		.preheaderContent .preheaderContent-right{
+			/*@editable*/background:#1e2835;
+			/*@editable*/color: #ccc;
+			/*@editable*/font-size: 12px;
+			/*@editable*/padding: 10px 30px;
+			/*@editable*/text-align: right;
+			/*@editable*/vertical-align: middle;}
+	/*
+	@tab Header
+	@section preheader style
+	@tip Set the background color for your email's preheader area.
+	@theme page
+	*/
+		#templatePreheader{
+			/*@editable*/background:none;}
+	/*
+	@tab Header
+	@section header style
+	@tip Set the background color and border for your email's header area.
+	@theme header
+	*/
+		#templateHeader{
+			/*@editable*/background:url(https://gallery.mailchimp.com/0493badebb7ea39a3081f9d8f/images/8730e4e0-bcb2-45eb-8fd9-3e0e215f0d3c.png) no-repeat center top;
+			/*@editable*/background-size:100% auto;
+			/*@editable*/border-bottom:0;
+		}
+	/*
+	@tab Header
+	@section header text
+	@tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+	*/
+		.headerContent{
+			/*@editable*/color:#fff;
+			/*@editable*/font-family:Arial;
+			/*@editable*/font-size:14px;
+			/*@editable*/padding:0 50px;
+			/*@editable*/height:234px;
+		}
+		.headerContent h2{ 
+			/*@editable*/color:#fff;
+			/*@editable*/font-weight:normal;
+		}
+	/*
+	@tab Black Text Area
+	@section Black Text Area
+	@tip Set the styling for your email's black text area. Choose styles that helps them stand out from your text.
+	*/
+		.black_section{
+			/*@editable*/color:#fff;
+			/*@editable*/font-weight:normal;
+			/*@editable*/background:#1e2835;
+			/*@editable*/font-size:14px;
+			/*@editable*/text-align:center;
+			/*@editable*/padding:25px 50px;
+		}
+	/*
+	@tab Half Area
+	@section Half Text Area
+	@tip Set the styling for your email's half text area. Choose styles that helps them stand out from your text.
+	*/
+	.half_section{
+		/*@editable*/width:50%;
+		/*@editable*/padding:0 10px;
+	}
+	/*
+
+	@tab Red Text Area
+	@section Red Text Area
+	@tip Set the styling for your email's red text area. Choose styles that helps them stand out from your text.
+	*/
+		.red_section{
+			/*@editable*/color:#fff;
+			/*@editable*/font-weight:normal;
+			/*@editable*/background:#ed485c;
+			/*@editable*/font-size:14px;
+			/*@editable*/text-align:left;
+			/*@editable*/padding:25px 50px;
+		}
+			.red_section .left-img{
+				/*@editable*/float:left;
+				/*@editable*/margin-right:20px;
+			}
+	/*
+	@tab White Text Area
+	@section White Text Area
+	@tip Set the styling for your email's White text area. Choose styles that helps them stand out from your text.
+	*/
+		.white_section{
+			/*@editable*/color:#282626;
+			/*@editable*/font-weight:normal;
+			/*@editable*/background:#fff;
+			/*@editable*/font-size:14px;
+			/*@editable*/text-align:center;
+			/*@editable*/padding:25px 50px;
+		}
+	/*
+	@tab Shipping Text Area
+	@section Shipping Text Area
+	@tip Set the styling for your email's Shipping text area. Choose styles that helps them stand out from your text.
+	*/
+		.shipping_section{
+			/*@editable*/color:#282626;
+			/*@editable*/font-weight:normal;
+			/*@editable*/background:#fff;
+			/*@editable*/font-size:14px;
+			/*@editable*/text-align:left;
+			/*@editable*/padding:25px 0 0;
+		}
+		.bodyContent .shipping_section img{
+			display: block;
+			margin: 0 auto 10px;
+		}
+		.shipping_section h1{
+			/*@editable*/text-align: center;
+		}
+		.shipping_section .red-sep{
+			/*@editable*/margin: 10px 0;
+		}
+	/*
+	@tab Black Seperator
+	@section seperator style
+	@tip Set the background color for your email's seperators.
+	*/
+		.black-sep{
+			/*@editable*/background:#be3a4a;
+			/*@editable*/height:5px;
+			/*@editable*/width:75px;
+			/*@editable*/margin:0;
+
+		}
+	/*
+	@tab Red Seperator
+	@section seperator style
+	@tip Set the background color for your email's seperators.
+	*/
+		.red-sep{
+			/*@editable*/background:#ed485c;
+			/*@editable*/height:5px;
+			/*@editable*/width:75px;
+			/*@editable*/margin:0 auto;
+
+		}
+	/*
+	@tab Red OffWhite Bar
+	@section OffWhite Bar style
+	@tip Set the background color for your email's offwhitebar.
+	*/
+		.offwhite-bar{
+			/*@editable*/background:#f7f7f7;
+			/*@editable*/color:#1e2835;
+			/*@editable*/font-size:12px;
+			/*@editable*/border-radius: 100px;
+			/*@editable*/padding:15px;
+			/*@editable*/text-align: center;
+			/*@editable*/text-align: center;
+		}
+	/*@tab Body
+	@section body style
+	@tip Set the background color for your email's body area.
+	*/
+		#templateContainer,.bodyContent{
+			/*@editable*/background-color:#FDFDFD;
+		}
+	/*
+	@tab Body
+	@section body link
+	@tip Set the styling for your email's main content links. Choose a color that helps them stand out from your text.
+	*/
+		.bodyContent img{
+			display:inline;
+			margin-bottom:10px;
+		}
+	/*
+	@tab Footer
+	@section footer style
+	@tip Set the background color and top border for your email's footer area.
+	@theme footer
+	*/
+		#templateFooter{
+			/*@editable*/background-color:#1e2835;
+			/*@editable*/color:#fff;
+			/*@editable*/padding:35px 50px;
+			/*@editable*/font-size:14px;
+			/*@editable*/font-family:Arial;
+		}
+		#templateFooter td{
+			width: 50%;
+		}
+		#templateFooter .footer-left{
+			/*@editable*/padding-right: 30px;
+		}
+		#templateFooter .footer-right{
+			/*@editable*/border-left: 1px solid rgba(255,255,255,0.2);
+			/*@editable*/padding-left: 30px;
+		}
+	/*
+	@tab Footer
+	@section footer link
+	@tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+	*/
+		.footerContent img{
+			display:inline;
+		}
+	@media (max-width: 599px){
+		.container{max-width: 100%;width: 100%;}
+		#templateHeader{-webkit-background-size: auto 100%;background-size: auto 100%;}
+		.preheaderContent .preheaderContent-right{padding: 10px;}
+		#templateFooter,.white_section,.red_section,.headerContent,.black_section{padding: 25px;}
+		#templateFooter .footer-left,#templateFooter .footer-right,.half_section{width: 100%;display: block;padding: 0 0 15px;}
+		#templateFooter .footer-right{border: none;border-top: 1px solid #ccc;padding-top: 15px;}
+		.red-sep,.black-sep,.shipping_section .red-sep{margin-top: 20px;margin-bottom: 20px; }
+	}
+	
+</style></head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    	<center>
+        	<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="backgroundTable">
+            	<tr>
+                	<td align="center" valign="top">
+                        <!-- // Begin Template Preheader \\ -->
+                        <table border="0" cellpadding="0" cellspacing="0" class="container" id="templatePreheader">
+                            <tr>
+                                <td valign="top" class="preheaderContent">
+                                	<!-- // Begin Module: Standard Preheader \\ -->
+                                    <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                                    	<tr>
+                                        	<td valign="top" class="preheaderContent-left">
+                                                <img src="https://gallery.mailchimp.com/0493badebb7ea39a3081f9d8f/images/85a6f3e0-8cd9-409a-91c9-903ec149cec3.png" alt="" />
+                                            </td>
+                                            <td valign="top" class="preheaderContent-right">
+                                            	Maecenas sed diam eget risus varius blandit sit amet non magna.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                	<!-- // End Module: Standard Preheader \\ -->
+                                
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // End Template Preheader \\ -->
+                    	<table border="0" cellpadding="0" cellspacing="0" class="container" id="templateContainer">
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Header \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" class="container" id="templateHeader">
+                                        <tr>
+                                            <td class="headerContent">
+                                            	<p style="margin: 10px 0;"><img width="110px" src="https://gallery.mailchimp.com/0493badebb7ea39a3081f9d8f/images/440c64fe-6b34-4b3a-896c-beb401f6cb6c.png" alt="" /></p>
+                                            	<h2>Welcome to the first ever Two Tap newsletter.</h2>
+                                            	<p style="margin: 10px 0;">We've been working non-stop in the background to provide you the tools to create delightful experiences for your shoppers. Since this is the first ever update it's going to be full to interesting tid-bits, so settle in.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Header \\ -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Body \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" class="container" id="templateBody">
+                                    	<tr>
+                                            <td valign="top" class="bodyContent">
+                                
+                                                <!-- // Begin Module: Standard Content \\ -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td valign="top" class="black_section">
+                                                            <div>
+                                                            	<img src="https://gallery.mailchimp.com/0493badebb7ea39a3081f9d8f/images/d15e693b-5906-4765-9efa-e58660baa85c.png" width="40" alt="" />
+                                                                <h1>575 Retailers</h1>
+                                                                <p style="margin: 10px 0;">We launched with 30 live retailers. That was easy. Since then we've grown to support 12x that number, and we've streamlined the process. Our integration team can now add 75 to 100 new retailers every month.</p>
+																<p style="margin: 10px 0;">More than that, we are keeping up with all the innevitable retailer website changes, and have become more stable than ever....</p>
+                                                            </div>
+														</td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Content \\ -->
+                                                <!-- // Begin Module: Standard Content \\ -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td valign="top" class="red_section">
+                                                            <div>
+                                                            	<img class="left-img" src="https://gallery.mailchimp.com/0493badebb7ea39a3081f9d8f/images/fdef2e71-8d8a-466e-baaf-a282d689b32e.png" width="33" alt="" />
+                                                                <h1>We've become more reliable than the retailer websites</h1>
+                                                                <div class="black-sep"></div>
+																<p style="margin: 10px 0;">Mid last year we switched from live order placing (where the shoppers had to wait for confirmation), to an asynchronous process where the orders are placed in the background. Since this was a new flow we had no idea how our shoppers would react, but we decided to take a shot and the result was a complete success.</p>
+																<p style="margin: 10px 0;">Right now we take an order, save its information, and let the shopper go about her routine. In the background we then place the order on the retailer's website. This process usually takes 3-5 minutes, at which point we (or you) send the shopper a confirmation. The retailer website is in fact the most reliable piece of their infrastructure. If a store's website goes down so do their sales.</p>
+																<p style="margin: 10px 0;">Because of this, API wise, we are slowly switching all our integrations from a polling model (where you ping /status) to callbacks (where we make an request to your servers when an order is being placed).</p>
+																<p style="margin: 10px 0;">This ensures we *never lose a sale*. Even if the retailer website goes
+																down (90% of our issues are not integrations breaking, but retailer websites being unavailable or buggy), we save the information and place it when the store comes back up.</p>
+                                                            </div>
+														</td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standard Content \\ -->
+                                                <!-- // Begin Module: Standard Content \\ -->
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td valign="top" class="white_section">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td valign="top" class="half_section">
+	        <div>
+	        	<img class="left-img" src="https://gallery.mailchimp.com/0493badebb7ea39a3081f9d8f/images/b63bf2d2-4a98-4632-aa17-cbbb98d6fa1f.png" width="45" alt="" />
+	            <h2>24/7 monitoring of integrations and orders</h2>
+	            <div class="red-sep"></div>
+				<p style="margin: 10px 0;">We have an amazing oncall team that's always monitoring your orders. Whatever happens, whether it's an integration breaking, an order with weird input, an edge case, or anything that prevents an order from being placed, you can be sure that someone is on it.</p>
+	        </div>
+		</td>
+		<td valign="top" class="half_section">
+	        <div>
+	        	<img class="left-img" src="https://gallery.mailchimp.com/0493badebb7ea39a3081f9d8f/images/f1e9f9dc-da12-4fb7-927d-83e04ce37ae8.png" width="45" alt="" />
+	            <h2>New dashboard <br>design</h2>
+	            <div class="red-sep"></div>
+				<p style="margin: 10px 0;">We also rolled out a new design for our dashboard which now features a new onboarding flow which makes it easier for developers to get started with Two Tap. More features and sections will be added in the near future.</p>
+	        </div>
+		</td>
+    </tr>
+    <tr>
+    	<td colspan="2">
+    		<div class="offwhite-bar">There's a new email address where the team can be contacted: <a href="mailto:alerts@twotap.com">alerts@twotap.com</a>.</div>
+    	</td>
+    </tr>
+    <tr>
+    	<td colspan="2" class="shipping_section">
+    		<img src="https://gallery.mailchimp.com/0493badebb7ea39a3081f9d8f/images/2c9b1706-391d-403f-910e-b71bf0711d25.png" width="63" alt="" />
+    		<h1>Shipping options and secondary images</h1>
+    		<div class="red-sep"></div>
+    		<p style="margin: 10px 0;">
+    		Two Tap already supported different images for different colors on each product. We now return all the available product images instead of just one per color. In the HTML5 interface you can now zoom and see images fullscreen.</p>
+    		<p style="margin: 10px 0;">Shipping options are incredibly important and we always wondered how we can build a universal system that could support thousands of stores in one clean API. We've come up with a simple but effective solution: we offer shoppers two shipping methods, cheapest or fastest. This has proven to be incredibly effective and it's available on the majority of our retailers.</p>
+			<p style="margin: 10px 0;">Our fast iterations speak for the flexibility of Two Tap. Once the backend was ready, our retailer team was able to add secondary images support for 550+ retailers in five days. It would have been impossible to ask 550+ retailers to add a new feature to their APIs in this time frame.</p>
+    	</td>
+    </tr>
+</table>
+														</td>
+													</tr>
+												</table>
+                                    			<!-- // End Module: Standard Content \\ -->
+                                                
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Body \\ -->
+                                </td>
+                            </tr>
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Footer \\ -->
+                                	<table border="0" cellpadding="0" cellspacing="0" class="container" id="templateFooter">
+                                    	<tr>
+                                        	<td class="footer-left">
+                                        		<img src="https://gallery.mailchimp.com/0493badebb7ea39a3081f9d8f/images/1364fdca-0e28-4cc9-94d7-dc5a8f379689.png" width="34" alt="" />
+                                        		<h1>Closing thoughts</h1>
+                                        		<p style="margin: 10px 0;">
+We're going to do our best to publish updates as we push them live on <a href="http://blog.twotap.com">http://blog.twotap.com</a>. Once every couple of months we will send a newsletter that sort of wraps up our last months worth of work.</p>
+<p style="margin: 10px 0;">We've love to hear feedback from you. Guide our roadmap for this year by replying to this email and telling us what you'd like us to
+                                        		</p>
+                                        	</td>
+                                        	<td class="footer-right">
+                                        		<h2>Further reading</h2>
+                                        		<p style="margin: 10px 0;">Why scraping and ecommerce are a perfect fit:<br><a href="#">View Article</a></p>
+                                        	</td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Footer \\ -->
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
