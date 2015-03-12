@@ -1,0 +1,109 @@
+@font-face{
+    font-family:'ultramagnetic';
+    src:url("fonts/ywft-ultramagnetic-webfont.eot");
+    src:url("fonts/ywft-ultramagnetic-webfont.eot?#iefix") format("embedded-opentype"),
+        url("fonts/ywft-ultramagnetic-webfont.woff") format("woff"),
+        url("fonts/ywft-ultramagnetic-webfont.ttf") format("truetype"),
+        url("fonts/ywft-ultramagnetic-webfont.svg#ywft_ultramagneticregular") format("svg");
+    font-weight:normal;
+    font-style:normal;}
+@font-face{
+    font-family:"AvenirNextLTW01-Regular";
+    src:url("fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
+    src:url("fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"),
+        url("fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"),
+        url("fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"),
+        url("fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
+}    
+@keyframes bgAnim {
+  from {
+    background-position: 0px 0%;
+  }
+  to {
+    background-position: -1024px 0%;
+  }
+}
+
+@-webkit-keyframes bgAnim {
+  from {
+    background-position: 0px 0%;
+  }
+  to {
+    background-position: -1024px 0%;
+    
+  }
+} 
+
+
+
+body{
+    background: url(http://etc-mysitemyway.s3.amazonaws.com/webtreats/assets/posts/724/full/tileable-cloud-patterns-2.jpg);    
+    margin: 0;
+    padding: 0;
+    -webkit-background-size: auto;
+    background-size: auto;
+    font-family:"AvenirNextLTW01-Regular";
+}
+body:not(.scrolling){
+    -webkit-background-blend-mode: multiply;
+    background-blend-mode: multiply;
+    -webkit-animation: bgAnim 30s linear infinite;
+    animation: bgAnim 30s linear infinite;
+}
+img{
+    max-width: 100%;
+    height: auto;}
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;}
+h1{
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 28px;
+}
+h1,h2,h3{
+    font-family:'ultramagnetic';
+    font-weight: normal;
+    margin: 5px 0;
+}
+p{
+    margin: 5px 0 10px;
+}
+.box{
+    width: 270px;
+    padding: 15px;
+    color: #fff;
+    margin: 0 auto;
+}
+.panel2,
+.panel {
+    width: 100%;
+    display: table;
+    height: 730px;
+}
+.panel .inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;}
+.panelCon{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.static-container{
+    position: relative;
+    width: 100%;
+}
+
+#pane-1{
+    width: 100%;
+    background: url(K2-Mountain-2.png) no-repeat center top;
+    height: 700px;
+}
+#pane-2 .inner{
+    background: rgba(0,0,0,0.15);
+}
