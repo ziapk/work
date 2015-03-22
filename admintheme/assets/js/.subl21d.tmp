@@ -1,0 +1,37 @@
+function extendMenu() {
+	$('body').toggleClass('sidebar-show');
+	return false;
+}
+function dismissPanel() {
+	var $this = $(this);
+	$this.closest('.panel').slideUp();
+	return false;
+}
+$.fn.SMenu = function(options){
+	if(this.length == 0) return this;
+	// support mutltiple elements
+	if(this.length > 1){
+		this.each(function(){$(this).SMenu(options)});
+		return this;
+	}
+	var el = this;
+	superLink = el.find('a');
+	superLink.each(function () {
+		$(this).click(function () {
+			if($(this).next().is(':visible')){
+				$(this).parent().find('.active').removeClass('active');
+				$(this).parent().removeClass('active');
+			}
+			else{
+			}
+				$(this).parent().parent().children().removeClass('active');
+				$(this).parent().addClass('active');
+		})
+	})
+	return this;
+}
+$(function () {
+	$('.extend-sidebar').click(extendMenu);
+	$('[data-dismiss="panel"]').click(dismissPanel);
+	$('.sidebar-menu').SMenu();
+})
