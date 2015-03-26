@@ -855,7 +855,7 @@ a:focus{
         height: 320px;
     }
     .banner-data .slash-img{
-        width: 77px;
+        display: none;
     }
     .banner-data h1{
         font-size: 34px;

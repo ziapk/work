@@ -75,8 +75,7 @@ function GetActive () {
     $('.navbar-nav li').removeClass('active').find('a[href="#'+currentSection+'"]').parent().addClass('active');
 }
 $(window).bind('scroll resize', GetActive);
-
-$(function () {
+$(function (){
 	$("#commentForm").validate({
 		 rules: {
 			interest: {
@@ -92,6 +91,10 @@ $(function () {
 			} else {
 				error.insertAfter(element);
 			}
+		},
+		 submitHandler: function(form) {
+			$('.success-message').trigger('click');
+			$('.reset-form').trigger('click');
 		}
 	});
-})
+});

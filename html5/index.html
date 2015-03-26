@@ -815,6 +815,7 @@
                     </div>
                 </div>
                 <p class="checkbox-error error"></p>
+                <button type="reset" class="reset-form hide">reset</button>
                 <button type="submit" class="btn btn-submit pull-right">
                     Submit <span class="fa fa-long-arrow-right"></span>
                 </button>
@@ -883,4 +884,28 @@
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script> -->
     </body>
+<!-- Button trigger modal -->
+<div>
+<button type="button" class="btn success-message hide btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Thank You!</h4>
+      </div>
+      <div class="modal-body">
+        <p>Your form is successfully submitted!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>    
 </html>
