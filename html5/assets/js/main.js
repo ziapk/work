@@ -129,6 +129,7 @@ $(function () {
 			   if(data == 'success'){
 					//$('#success-wrap').fadeIn(300);
 					$('.form-success-message').trigger('click');
+					$('.reset-form').trigger('click');
 			   }else{
 					//$('#error-wrap').fadeIn(300);
 					$('.form-error-message').trigger('click');
