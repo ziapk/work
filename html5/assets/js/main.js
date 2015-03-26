@@ -75,26 +75,67 @@ function GetActive () {
     $('.navbar-nav li').removeClass('active').find('a[href="#'+currentSection+'"]').parent().addClass('active');
 }
 $(window).bind('scroll resize', GetActive);
-$(function (){
-	$("#commentForm").validate({
-		 rules: {
-			interest: {
-				required: true
-			}
-		},
-		messages : {
-			interest: "Please select atleast one 'Services of Interest'"
-		},
-		errorPlacement: function(error, element) {
+
+
+
+$(function () {
+	
+// Validation
+	
+	$("#updateForm").validate({
+							
+/*	    invalidHandler: function(form, validator) {
+									$('label.error').html('');
+		},*/
+		rules: {
+				  name: {
+						  required: true
+				  },
+				  email: {
+						  required: true,
+						  email: true
+				  },
+				  interest: {
+						  required: true,
+				  }
+				  
+		},// rules
+
+		messages: {
+				  name: {
+						  required: 'Please enter name'
+				  },
+				  email: {
+						  required: 'Please enter email',
+						  email: 'Please enter valid email'
+				  },
+				  interest: {
+						  required: "Please select atleast one 'Services of Interest'"
+				  }
+		},// messages
+		 errorPlacement: function(error, element) {
 			if (element.attr("name") == "interest") {
-				$('.checkbox-error').html(error)
+				$('.checkbox-error').html(error);
 			} else {
-				error.insertAfter(element);
+			error.insertAfter(element);
 			}
 		},
-		 submitHandler: function(form) {
-			$('.success-message').trigger('click');
-			$('.reset-form').trigger('click');
+		submitHandler: function(form) {
+		   	
+			var formData = $(form).serialize();
+			
+			$.get("email/email.php", formData, function(data){
+				
+			   if(data == 'success'){
+					//$('#success-wrap').fadeIn(300);
+					$('.form-success-message').trigger('click');
+			   }else{
+					//$('#error-wrap').fadeIn(300);
+					$('.form-error-message').trigger('click');
+			   }
+			 });
 		}
-	});
+
+	});// validate
+	
 });
