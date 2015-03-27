@@ -144,12 +144,12 @@
                     <i class="fa fa-angle-left pull-right"></i>
                   </a>
                   <ul>
-                    <li><a href="javascript:void(0);"><i class="fa fa-circle-o"></i> General</a></li>
-                    <li><a href="javascript:void(0);"><i class="fa fa-circle-o"></i> Icons</a></li>
-                    <li><a href="javascript:void(0);"><i class="fa fa-circle-o"></i> Buttons</a></li>
-                    <li><a href="javascript:void(0);"><i class="fa fa-circle-o"></i> Sliders</a></li>
-                    <li><a href="javascript:void(0);"><i class="fa fa-circle-o"></i> Timeline</a></li>
-                    <li><a href="javascript:void(0);"><i class="fa fa-circle-o"></i> Modals</a></li>
+                    <li><a href="general.html"><i class="fa fa-circle-o"></i> General</a></li>
+                    <li><a href="icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
+                    <li><a href="buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
+                    <li><a href="slider.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
+                    <li><a href="timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
+                    <li><a href="models.html"><i class="fa fa-circle-o"></i> Modals</a></li>
                   </ul>
                 </li>
                 <li>
@@ -261,7 +261,7 @@
                           </div>
                           <div id="tb1" class="panel-collapse collapse in">
                             <div class="panel-body">
-                              <div style="height: 300px;"></div>
+                                <div id="line-example"></div>
                             </div>
                           </div>
                       </div>
@@ -281,8 +281,8 @@
                         </div>
                         <div id="tb2" class="panel-collapse collapse in">
                           <div class="panel-body">
-                              <div style="height: 300px;"></div>
-                            </div>
+                            <div id="area-example"></div>
+                           </div>
                         </div>
                     </div>
                   </div>
@@ -303,7 +303,7 @@
                           </div>
                           <div id="tb3" class="panel-collapse collapse in">
                             <div class="panel-body">
-                              <div style="height: 300px;"></div>
+                              <div id="donut-example" style="height: 407px;"></div>
                             </div>
                           </div>
                       </div>
@@ -323,7 +323,7 @@
                         </div>
                         <div id="tb4" class="panel-collapse collapse in">
                           <div class="panel-body">
-                              <div style="height: 300px;"></div>
+                              <div id="bar-example"></div>
                             </div>
                         </div>
                     </div>
@@ -347,17 +347,16 @@
           </ul>
         </div>
         
-
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="assets/js/plugins.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/tooltip.min.js"></script>
-        
         <script src="assets/js/plugins/jquery-jvectormap-1.2.2.min.js"></script>
         <script src="assets/js/plugins/jquery-jvectormap-world-mill-en.js"></script>
         <script src="assets/js/plugins/chart.min.js"></script>
-        <script src="assets/js/plugins/jquery.sparkline.min.js"></script>
+        <script src="http://cdn.oesmith.co.uk/morris-0.4.1.min.js"></script>
         <script src="assets/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -368,6 +367,82 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+        <script type="text/javascript">
+        /*
+         * Play with this code and it'll update in the panel opposite.
+         *
+         * Why not try some of the options above?
+         */
+          Morris.Line({
+            element: 'line-example',
+            data: [
+              { y: '2006', a: 100, b: 90 },
+              { y: '2007', a: 75,  b: 65 },
+              { y: '2008', a: 50,  b: 40 },
+              { y: '2009', a: 75,  b: 65 },
+              { y: '2010', a: 50,  b: 40 },
+              { y: '2011', a: 75,  b: 65 },
+              { y: '2012', a: 100, b: 90 }
+            ],
+            xkey: 'y',
+            ykeys: ['a', 'b'],
+            labels: ['Series A', 'Series B']
+        });
+        /*
+         * Play with this code and it'll update in the panel opposite.
+         *
+         * Why not try some of the options above?
+         */
+        Morris.Area({
+          element: 'area-example',
+          data: [
+            { y: '2006', a: 100, b: 90 },
+            { y: '2007', a: 75,  b: 65 },
+            { y: '2008', a: 50,  b: 40 },
+            { y: '2009', a: 75,  b: 65 },
+            { y: '2010', a: 50,  b: 40 },
+            { y: '2011', a: 75,  b: 65 },
+            { y: '2012', a: 100, b: 90 }
+          ],
+          xkey: 'y',
+          ykeys: ['a', 'b'],
+          labels: ['Series A', 'Series B']
+        });
+        /*
+         * Play with this code and it'll update in the panel opposite.
+         *
+         * Why not try some of the options above?
+         */
+        Morris.Bar({
+          element: 'bar-example',
+          data: [
+            { y: '2006', a: 100, b: 90 },
+            { y: '2007', a: 75,  b: 65 },
+            { y: '2008', a: 50,  b: 40 },
+            { y: '2009', a: 75,  b: 65 },
+            { y: '2010', a: 50,  b: 40 },
+            { y: '2011', a: 75,  b: 65 },
+            { y: '2012', a: 100, b: 90 }
+          ],
+          xkey: 'y',
+          ykeys: ['a', 'b'],
+          labels: ['Series A', 'Series B']
+        });
+        /*
+         * Play with this code and it'll update in the panel opposite.
+         *
+         * Why not try some of the options above?
+         */
+        Morris.Donut({
+          element: 'donut-example',
+          data: [
+            {label: "Download Sales", value: 12},
+            {label: "In-Store Sales", value: 30},
+            {label: "Mail-Order Sales", value: 20}
+          ]
+        });
+
         </script>
     </body>
 </html>
