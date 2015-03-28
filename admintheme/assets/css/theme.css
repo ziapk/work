@@ -1162,6 +1162,7 @@ body.sidebar-show .footer {
   border: 1px solid;
   border-right: none;
   right: -71px;
+  z-index: 999;
   -webkit-transition: right 0.2s cubic-bezier(0.32, 1.25, 0.375, 1.15) 0s;
   -moz-transition: right 0.2s cubic-bezier(0.32, 1.25, 0.375, 1.15) 0s;
   -o-transition: right 0.2s cubic-bezier(0.32, 1.25, 0.375, 1.15) 0s;
@@ -1224,7 +1225,7 @@ body.sidebar-show .footer {
     border: none;
     margin: 0;
     border-radius: 0;
-    color: #fff; }
+    color: #fff !important; }
   .tab-wrap .nav-tabs > li.active > a,
   .tab-wrap .nav-tabs > li.active > a:focus,
   .tab-wrap .nav-tabs > li.active > a:hover {
@@ -1296,8 +1297,167 @@ body.sidebar-show .footer {
 .btn-group-justified {
   margin-bottom: 10px; }
 
+.buttons-combine > .btn-group,
+.buttons-combine > .btn {
+  min-width: 130px;
+  margin: 5px; }
+
+.buttons .btn {
+  margin: 5px; }
+
+/* timeline-window */
+.timeline-window {
+  padding: 5px 5px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+  .timeline-window .section-title {
+    background: #ECF0F5;
+    position: relative;
+    z-index: 1; }
+  .timeline-window .userimg-section {
+    position: relative; }
+    .timeline-window .userimg-section img {
+      display: block;
+      max-width: 100%;
+      height: auto; }
+    .timeline-window .userimg-section .user-img {
+      left: 20px;
+      bottom: -25px;
+      position: absolute;
+      width: 128px;
+      height: 128px;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 4px; }
+    .timeline-window .userimg-section .username {
+      font-size: 23.8px;
+      font-size: 1.7rem;
+      color: #fff;
+      left: 165px;
+      bottom: 10px;
+      font-weight: bold;
+      position: absolute; }
+  .timeline-window .tl-posts-section {
+    padding: 0 10px 10px;
+    margin-top: 40px;
+    position: relative; }
+    .timeline-window .tl-posts-section:after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      bottom: 0;
+      width: 4px;
+      left: 50%;
+      border: none;
+      background: #ccc;
+      margin-left: -2px; }
+  .timeline-window h4 {
+    font-weight: normal;
+    margin: 0; }
+  @media (max-width: 1023px) {
+    .timeline-window .post {
+      z-index: 99; } }
+  .timeline-window .post img {
+    max-width: 100%;
+    height: auto; }
+  .timeline-window .post:before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    font-size: 28px;
+    font-size: 2rem;
+    color: #fff;
+    line-height: inherit; }
+    @media (max-width: 1023px) {
+      .timeline-window .post:before {
+        display: none; } }
+  .timeline-window .post:nth-child(2n+1):before {
+    content: "\f0da";
+    left: 100%;
+    margin-left: -15px; }
+  .timeline-window .post:nth-child(2n) {
+    margin-top: 46px; }
+    @media (max-width: 1023px) {
+      .timeline-window .post:nth-child(2n) {
+        margin-top: 0; } }
+    .timeline-window .post:nth-child(2n):before {
+      content: "\f0d9";
+      right: 100%;
+      margin-right: -15px; }
+  .timeline-window .post .posted {
+    color: #808080;
+    font-style: italic; }
+  .timeline-window .post .enter-your-comment .user-img {
+    width: 34px; }
+    .timeline-window .post .enter-your-comment .user-img img {
+      width: 100%; }
+  .timeline-window .post .enter-your-comment .write-comment {
+    padding-left: 10px; }
+
+.modal-static .modal {
+  display: block;
+  position: static; }
+
+.modal-content {
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); }
+
+.modal-primary {
+  color: #fff; }
+  .modal-primary .modal-content {
+    background: #337ab7; }
+  .modal-primary .modal-header {
+    border-bottom-color: #2d6da3; }
+  .modal-primary .modal-footer {
+    border-top-color: #2d6da3; }
+
+.modal-success {
+  color: #fff; }
+  .modal-success .modal-content {
+    background: #5cb85c; }
+  .modal-success .modal-header {
+    border-bottom-color: #4cae4c; }
+  .modal-success .modal-footer {
+    border-top-color: #4cae4c; }
+
+.modal-danger {
+  color: #fff; }
+  .modal-danger .modal-content {
+    background: #d9534f; }
+  .modal-danger .modal-header {
+    border-bottom-color: #d43f3a; }
+  .modal-danger .modal-footer {
+    border-top-color: #d43f3a; }
+
+.modal-warning {
+  color: #fff; }
+  .modal-warning .modal-content {
+    background: #f0ad4e; }
+  .modal-warning .modal-header {
+    border-bottom-color: #eea236; }
+  .modal-warning .modal-footer {
+    border-top-color: #eea236; }
+
+.modal-info {
+  color: #fff; }
+  .modal-info .modal-content {
+    background: #5bc0de; }
+  .modal-info .modal-header {
+    border-bottom-color: #46b8da; }
+  .modal-info .modal-footer {
+    border-top-color: #46b8da; }
+
+.modal-grey {
+  color: #fff; }
+  .modal-grey .modal-content {
+    background: #999999; }
+  .modal-grey .modal-header {
+    border-bottom-color: #8c8c8c; }
+  .modal-grey .modal-footer {
+    border-top-color: #8c8c8c; }
+
 /* colors */
-body.theme-yellow a {
+body.theme-yellow a:not(.btn) {
   color: #f39c12; }
 body.theme-yellow .navbar {
   background: #f39c12;
@@ -1372,7 +1532,7 @@ body.theme-yellow .theme-selector {
 			theme theme-yellow ended! 
 			themeColor was #f39c12.
 ############################################################### */
-body.theme-red a {
+body.theme-red a:not(.btn) {
   color: #dd4b39; }
 body.theme-red .navbar {
   background: #dd4b39;
@@ -1447,7 +1607,7 @@ body.theme-red .theme-selector {
 			theme theme-red ended! 
 			themeColor was #dd4b39.
 ############################################################### */
-body.theme-purple a {
+body.theme-purple a:not(.btn) {
   color: #605ca8; }
 body.theme-purple .navbar {
   background: #605ca8;
@@ -1522,7 +1682,7 @@ body.theme-purple .theme-selector {
 			theme theme-purple ended! 
 			themeColor was #605ca8.
 ############################################################### */
-body.theme-green a {
+body.theme-green a:not(.btn) {
   color: #00a65a; }
 body.theme-green .navbar {
   background: #00a65a;
@@ -1597,7 +1757,7 @@ body.theme-green .theme-selector {
 			theme theme-green ended! 
 			themeColor was #00a65a.
 ############################################################### */
-body.theme-blue a {
+body.theme-blue a:not(.btn) {
   color: #3c8dbc; }
 body.theme-blue .navbar {
   background: #3c8dbc;

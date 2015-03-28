@@ -1,0 +1,116 @@
+/* Ion.RangeSlider, Modern Skin
+// css version 2.0.3
+// © Denis Ineshin, 2014    https://github.com/IonDen
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// Skin details */
+
+.skin-modern .irs-line-mid,
+.skin-modern .irs-line-left,
+.skin-modern .irs-line-right,
+.skin-modern .irs-bar,
+.skin-modern .irs-bar-edge,
+.skin-modern .irs-slider {
+    background: url(../img/sprite-skin-modern.png) repeat-x;
+}
+
+.skin-modern .irs {
+    height: 50px;
+}
+.skin-modern .irs-with-grid {
+    height: 70px;
+}
+.skin-modern .irs-line {
+    height: 6px; top: 25px;
+}
+    .skin-modern .irs-line-left {
+        height: 6px;
+        background-position: 0 -30px;
+    }
+    .skin-modern .irs-line-mid {
+        height: 6px;
+        background-position: 0 0;
+    }
+    .skin-modern .irs-line-right {
+        height: 6px;
+        background-position: 100% -30px;
+    }
+
+.skin-modern .irs-bar {
+    height: 6px; top: 25px;
+    background-position: 0 -60px;
+}
+    .skin-modern .irs-bar-edge {
+        top: 25px;
+        height: 6px; width: 6px;
+        background-position: 0 -90px;
+    }
+
+.skin-modern .irs-shadow {
+    height: 5px; top: 25px;
+    background: #000;
+    opacity: 0.25;
+}
+.skin-modern .lt-ie9 .irs-shadow {
+    filter: alpha(opacity=25);
+}
+
+.skin-modern .irs-slider {
+    width: 11px; height: 18px;
+    top: 31px;
+    background-position: 0 -120px;
+}
+.skin-modern .irs-slider.state_hover, .skin-modern .irs-slider:hover {
+    background-position: 0 -150px;
+}
+
+.skin-modern .irs-min, .irs-max {
+    color: #999;
+    font-size: 10px; line-height: 1.333;
+    text-shadow: none;
+    top: 0; padding: 1px 3px;
+    background: #e1e4e9;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.skin-modern .irs-from, .skin-modern .irs-to, .skin-modern .irs-single {
+    color: #fff;
+    font-size: 10px; line-height: 1.333;
+    text-shadow: none;
+    padding: 1px 5px;
+    background: #20b426;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.skin-modern .irs-from:after, .skin-modern .irs-to:after, .skin-modern .irs-single:after {
+    position: absolute; display: block; content: "";
+    bottom: -6px; left: 50%;
+    width: 0; height: 0;
+    margin-left: -3px;
+    overflow: hidden;
+    border: 3px solid transparent;
+    border-top-color: #20b426;
+}
+
+.skin-modern .irs-grid {
+    height: 34px;
+}
+.skin-modern .irs-grid-pol {
+    background: #c0c0c0;
+}
+.skin-modern .irs-grid-text {
+    bottom: 12px;
+    color: #c0c0c0;
+}
+
+.skin-modern .irs-disable-mask {
+
+}
+.skin-modern .irs-disabled {
+
+}
+.skin-modern .lt-ie9 .irs-disabled {
+
+}

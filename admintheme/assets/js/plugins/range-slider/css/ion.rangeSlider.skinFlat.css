@@ -1,0 +1,106 @@
+/* Ion.RangeSlider, Flat UI Skin
+// css version 2.0.3
+// © Denis Ineshin, 2014    https://github.com/IonDen
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// Skin details */
+
+.skin-flat .irs-line-mid,
+.skin-flat .irs-line-left,
+.skin-flat .irs-line-right,
+.skin-flat .irs-bar,
+.skin-flat .irs-bar-edge,
+.skin-flat .irs-slider {
+    background: url(../img/sprite-skin-flat.png) repeat-x;
+}
+
+.skin-flat .irs {
+    height: 40px;
+}
+.skin-flat .irs-with-grid {
+    height: 60px;
+}
+.skin-flat .irs-line {
+    height: 12px; top: 25px;
+}
+    .skin-flat .irs-line-left {
+        height: 12px;
+        background-position: 0 -30px;
+    }
+    .skin-flat .irs-line-mid {
+        height: 12px;
+        background-position: 0 0;
+    }
+    .skin-flat .irs-line-right {
+        height: 12px;
+        background-position: 100% -30px;
+    }
+
+.skin-flat .irs-bar {
+    height: 12px; top: 25px;
+    background-position: 0 -60px;
+}
+    .skin-flat .irs-bar-edge {
+        top: 25px;
+        height: 12px; width: 9px;
+        background-position: 0 -90px;
+    }
+
+.skin-flat .irs-shadow {
+    height: 3px; top: 34px;
+    background: #000;
+    opacity: 0.25;
+}
+.skin-flat .lt-ie9 .irs-shadow {
+    filter: alpha(opacity=25);
+}
+
+.skin-flat .irs-slider {
+    width: 16px; height: 18px;
+    top: 22px;
+    background-position: 0 -120px;
+}
+.skin-flat .irs-slider.state_hover,.skin-flat .irs-slider:hover {
+    background-position: 0 -150px;
+}
+
+.skin-flat .irs-min,.skin-flat .irs-max {
+    color: #999;
+    font-size: 10px; line-height: 1.333;
+    text-shadow: none;
+    top: 0; padding: 1px 3px;
+    background: #e1e4e9;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.skin-flat .irs-from,.skin-flat .irs-to,.skin-flat .irs-single {
+    color: #fff;
+    font-size: 10px; line-height: 1.333;
+    text-shadow: none;
+    padding: 1px 5px;
+    background: #ed5565;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.skin-flat .irs-from:after,.skin-flat .irs-to:after,.skin-flat .irs-single:after {
+    position: absolute; display: block; content: "";
+    bottom: -6px; left: 50%;
+    width: 0; height: 0;
+    margin-left: -3px;
+    overflow: hidden;
+    border: 3px solid transparent;
+    border-top-color: #ed5565;
+}
+
+
+.skin-flat .irs-grid-pol {
+    background: #e1e4e9;
+}
+.skin-flat .irs-grid-text {
+    color: #999;
+}
+
+.skin-flat .irs-disabled {
+}

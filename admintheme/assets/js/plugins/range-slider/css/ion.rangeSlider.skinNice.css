@@ -1,0 +1,102 @@
+/* Ion.RangeSlider, Nice Skin
+// css version 2.0.3
+// © Denis Ineshin, 2014    https://github.com/IonDen
+// ===================================================================================================================*/
+
+/* =====================================================================================================================
+// Skin details */
+
+.skin-nice .irs-line-mid,
+.skin-nice .irs-line-left,
+.skin-nice .irs-line-right,
+.skin-nice .irs-bar,
+.skin-nice .irs-bar-edge,
+.skin-nice .irs-slider {
+    background: url(../img/sprite-skin-nice.png) repeat-x;
+}
+
+.skin-nice .irs {
+    height: 40px;
+}
+.skin-nice .irs-with-grid {
+    height: 60px;
+}
+.skin-nice .irs-line {
+    height: 8px; top: 25px;
+}
+    .skin-nice .irs-line-left {
+        height: 8px;
+        background-position: 0 -30px;
+    }
+    .skin-nice .irs-line-mid {
+        height: 8px;
+        background-position: 0 0;
+    }
+    .skin-nice .irs-line-right {
+        height: 8px;
+        background-position: 100% -30px;
+    }
+
+.skin-nice .irs-bar {
+    height: 8px; top: 25px;
+    background-position: 0 -60px;
+}
+    .skin-nice .irs-bar-edge {
+        top: 25px;
+        height: 8px; width: 11px;
+        background-position: 0 -90px;
+    }
+
+.skin-nice .irs-shadow {
+    height: 1px; top: 34px;
+    background: #000;
+    opacity: 0.15;
+}
+.skin-nice .lt-ie9 .irs-shadow {
+    filter: alpha(opacity=15);
+}
+
+.skin-nice .irs-slider {
+    width: 22px; height: 22px;
+    top: 17px;
+    background-position: 0 -120px;
+}
+.skin-nice .irs-slider.state_hover, .skin-nice .irs-slider:hover {
+    background-position: 0 -150px;
+}
+
+.skin-nice .irs-min, .irs-max {
+    color: #999;
+    font-size: 10px; line-height: 1.333;
+    text-shadow: none;
+    top: 0; padding: 1px 3px;
+    background: rgba(0,0,0,0.1);
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.skin-nice .lt-ie9 .irs-min, .skin-nice .lt-ie9 .irs-max {
+    background: #ccc;
+}
+
+.skin-nice .irs-from,.skin-nice .irs-to,.skin-nice .irs-single {
+    color: #fff;
+    font-size: 10px; line-height: 1.333;
+    text-shadow: none;
+    padding: 1px 5px;
+    background: rgba(0,0,0,0.3);
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.skin-nice .lt-ie9 .irs-from,.skin-nice .lt-ie9 .irs-to,.skin-nice .lt-ie9 .irs-single {
+    background: #999;
+}
+
+.skin-nice .irs-grid-pol {
+    background: #99a4ac;
+}
+.skin-nice .irs-grid-text {
+    color: #99a4ac;
+}
+
+.skin-nice .irs-disabled {
+}
