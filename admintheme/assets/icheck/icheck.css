@@ -1,0 +1,222 @@
+.flat_aero .icheckbox,.flat_aero .iradio{background-image: url(images/flat_aero.png);}
+.flat_blue .icheckbox,.flat_blue .iradio{background-image: url(images/flat_blue.png);}
+.flat_green .icheckbox,.flat_green .iradio{background-image: url(images/flat_green.png);}
+.flat_grey .icheckbox,.flat_grey .iradio{background-image: url(images/flat_grey.png);}
+.flat_orange .icheckbox,.flat_orange .iradio{background-image: url(images/flat_orange.png);}
+.flat_pink .icheckbox,.flat_pink .iradio{background-image: url(images/flat_pink.png);}
+.flat_purple .icheckbox,.flat_purple .iradio{background-image: url(images/flat_purple.png);}
+.flat_red .icheckbox,.flat_red .iradio{background-image: url(images/flat_red.png);}
+.flat_yellow .icheckbox,.flat_yellow .iradio{background-image: url(images/flat_yellow.png);}
+
+.square .icheckbox,.square .iradio{background-image: url(images/square.png);}
+.square_aero .icheckbox,.square_aero .iradio{background-image: url(images/square_aero.png);}
+.square_blue .icheckbox,.square_blue .iradio{background-image: url(images/square_blue.png);}
+.square_green .icheckbox,.square_green .iradio{background-image: url(images/square_green.png);}
+.square_grey .icheckbox,.square_grey .iradio{background-image: url(images/square_grey.png);}
+.square_orange .icheckbox,.square_orange .iradio{background-image: url(images/square_orange.png);}
+.square_pink .icheckbox,.square_pink .iradio{background-image: url(images/square_pink.png);}
+.square_purple .icheckbox,.square_purple .iradio{background-image: url(images/square_purple.png);}
+.square_red .icheckbox,.square_red .iradio{background-image: url(images/square_red.png);}
+.square_yellow .icheckbox,.square_yellow .iradio{background-image: url(images/square_yellow.png);}
+
+
+.minimal .icheckbox,.minimal .iradio{background-image: url(images/minimal.png);}
+.minimal_aero .icheckbox,.minimal_aero .iradio{background-image: url(images/minimal_aero.png);}
+.minimal_blue .icheckbox,.minimal_blue .iradio{background-image: url(images/minimal_blue.png);}
+.minimal_green .icheckbox,.minimal_green .iradio{background-image: url(images/minimal_green.png);}
+.minimal_grey .icheckbox,.minimal_grey .iradio{background-image: url(images/minimal_grey.png);}
+.minimal_orange .icheckbox,.minimal_orange .iradio{background-image: url(images/minimal_orange.png);}
+.minimal_pink .icheckbox,.minimal_pink .iradio{background-image: url(images/minimal_pink.png);}
+.minimal_purple .icheckbox,.minimal_purple .iradio{background-image: url(images/minimal_purple.png);}
+.minimal_red .icheckbox,.minimal_red .iradio{background-image: url(images/minimal_red.png);}
+.minimal_yellow .icheckbox,.minimal_yellow .iradio{background-image: url(images/minimal_yellow.png);}
+
+
+.icheckbox,
+.iradio{
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background: url(images/flat.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox {
+    background-position: 0 0;
+}
+    .icheckbox.checked {
+        background-position: -22px 0;
+    }
+    .icheckbox.disabled {
+        background-position: -44px 0;
+        cursor: default;
+    }
+    .icheckbox.checked.disabled {
+        background-position: -66px 0;
+    }
+
+.iradio {
+    background-position: -88px 0;
+}
+    .iradio.checked {
+        background-position: -110px 0;
+    }
+    .iradio.disabled {
+        background-position: -132px 0;
+        cursor: default;
+    }
+    .iradio.checked.disabled {
+        background-position: -154px 0;
+    }
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    .icheckbox,
+    .iradio {
+        background-image: url(flat@2x.png);
+        -webkit-background-size: 176px 22px;
+        background-size: 176px 22px;
+    }
+    .flat_aero .icheckbox,.flat_aero .iradio{background-image: url(images/flat_aero@2x.png);}
+    .flat_blue .icheckbox,.flat_blue .iradio{background-image: url(images/flat_blue@2x.png);}
+    .flat_green .icheckbox,.flat_green .iradio{background-image: url(images/flat_green@2x.png);}
+    .flat_grey .icheckbox,.flat_grey .iradio{background-image: url(images/flat_grey@2x.png);}
+    .flat_orange .icheckbox,.flat_orange .iradio{background-image: url(images/flat_orange.png);}
+    .flat_pink .icheckbox,.flat_pink .iradio{background-image: url(images/flat_pink@2x.png);}
+    .flat_purple .icheckbox,.flat_purple .iradio{background-image: url(images/flat_purple@2x.png);}
+    .flat_red .icheckbox,.flat_red .iradio{background-image: url(images/flat_red@2x.png);}
+    .flat_yellow .icheckbox,.flat_yellow .iradio{background-image: url(images/flat_yellow@2x.png);}
+
+    .square .icheckbox,.square .iradio{background-image: url(images/square@2x.png);}
+    .square_aero .icheckbox,.square_aero .iradio{background-image: url(images/square_aero@2x.png);}
+    .square_blue .icheckbox,.square_blue .iradio{background-image: url(images/square_blue@2x.png);}
+    .square_green .icheckbox,.square_green .iradio{background-image: url(images/square_green@2x.png);}
+    .square_grey .icheckbox,.square_grey .iradio{background-image: url(images/square_grey@2x.png);}
+    .square_orange .icheckbox,.square_orange .iradio{background-image: url(images/square_orange@2x.png);}
+    .square_pink .icheckbox,.square_pink .iradio{background-image: url(images/square_pink@2x.png);}
+    .square_purple .icheckbox,.square_purple .iradio{background-image: url(images/square_purple@2x.png);}
+    .square_red .icheckbox,.square_red .iradio{background-image: url(images/square_red@2x.png);}
+    .square_yellow .icheckbox,.square_yellow .iradio{background-image: url(images/square_yellow@2x.png);}
+
+
+    .minimal .icheckbox,.minimal .iradio{background-image: url(images/minimal@2x.png);}
+    .minimal_aero .icheckbox,.minimal_aero .iradio{background-image: url(images/minimal_aero@2x.png);}
+    .minimal_blue .icheckbox,.minimal_blue .iradio{background-image: url(images/minimal_blue@2x.png);}
+    .minimal_green .icheckbox,.minimal_green .iradio{background-image: url(images/minimal_green@2x.png);}
+    .minimal_grey .icheckbox,.minimal_grey .iradio{background-image: url(images/minimal_grey@2x.png);}
+    .minimal_orange .icheckbox,.minimal_orange .iradio{background-image: url(images/minimal_orange@2x.png);}
+    .minimal_pink .icheckbox,.minimal_pink .iradio{background-image: url(images/minimal_pink@2x.png);}
+    .minimal_purple .icheckbox,.minimal_purple .iradio{background-image: url(images/minimal_purple@2x.png);}
+    .minimal_red .icheckbox,.minimal_red .iradio{background-image: url(images/minimal_red@2x.png);}
+    .minimal_yellow .icheckbox,.minimal_yellow .iradio{background-image: url(images/minimal_yellow@2x.png);}
+}
+
+
+
+[class^="square"] .icheckbox,
+[class^="square"] .iradio{
+    width: 22px;
+    height: 22px;
+}
+[class^="square"] .icheckbox {
+    background-position: 0 0;
+}
+    [class^="square"] .icheckbox.hover {
+        background-position: -24px 0;
+    }
+    [class^="square"] .icheckbox.checked {
+        background-position: -48px 0;
+    }
+    [class^="square"] .icheckbox.disabled {
+        background-position: -72px 0;
+        cursor: default;
+    }
+    [class^="square"] .icheckbox.checked.disabled {
+        background-position: -96px 0;
+    }
+
+[class^="square"] .iradio {
+    background-position: -120px 0;
+}
+    [class^="square"] .iradio.hover {
+        background-position: -144px 0;
+    }
+    [class^="square"] .iradio.checked {
+        background-position: -168px 0;
+    }
+    [class^="square"] .iradio.disabled {
+        background-position: -192px 0;
+        cursor: default;
+    }
+    [class^="square"] .iradio.checked.disabled {
+        background-position: -216px 0;
+    }
+
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    [class^="square"] .icheckbox,
+    [class^="square"] .iradio {
+        background-image: url(aero@2x.png);
+        -webkit-background-size: 240px 24px;
+        background-size: 240px 24px;
+    }
+}
+
+
+
+
+[class^="minimal"] .icheckbox,
+[class^="minimal"] .iradio{
+    width: 18px;
+    height: 18px;
+}
+[class^="minimal"] .icheckbox {
+    background-position: 0 0;
+}
+    [class^="minimal"] .icheckbox.hover {
+        background-position: -20px 0;
+    }
+    [class^="minimal"] .icheckbox.checked {
+        background-position: -40px 0;
+    }
+    [class^="minimal"] .icheckbox.disabled {
+        background-position: -60px 0;
+        cursor: default;
+    }
+    [class^="minimal"] .icheckbox.checked.disabled {
+        background-position: -80px 0;
+    }
+
+[class^="minimal"] .iradio {
+    background-position: -100px 0;
+}
+    [class^="minimal"] .iradio.hover {
+        background-position: -120px 0;
+    }
+    [class^="minimal"] .iradio.checked {
+        background-position: -140px 0;
+    }
+    [class^="minimal"] .iradio.disabled {
+        background-position: -160px 0;
+        cursor: default;
+    }
+    [class^="minimal"] .iradio.checked.disabled {
+        background-position: -180px 0;
+    }
+
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    [class^="minimal"] .icheckbox,
+    [class^="minimal"] .iradio {
+        background-image: url(aero@2x.png);
+        -webkit-background-size: 200 20px;
+        background-size: 200px 20px;
+    }
+}
