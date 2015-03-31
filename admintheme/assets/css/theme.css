@@ -1474,8 +1474,99 @@ body.sidebar-show .footer {
 .pagination > .active > span:hover {
   color: #fff !important; }
 
+/* calendar */
+.fc-event {
+  border-color: transparent; }
+
+#external-events
+.fc-event {
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin: 5px 0;
+  font-size: 14px; }
+
+.fc-toolbar {
+  padding: 10px 15px 5px;
+  margin: 0; }
+  .fc-toolbar h2 {
+    line-height: 30px; }
+
+.fc-view-container {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 0; }
+
+#color-chooser li {
+  cursor: pointer; }
+
+/* sidemenu for compose */
+.list-group .list-group-header {
+  font-size: 18.2px;
+  font-size: 1.3rem; }
+
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+  background: #F4F4F4;
+  color: inherit;
+  text-shadow: none;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-left: 3px solid #337ab7;
+  padding: 10px 15px 10px 12px; }
+
+.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
+  background: #337ab7;
+  color: #fff; }
+
+.list-group-item .related-icon {
+  margin-right: 7px; }
+
+/* read.html */
+.read-mail h3, .read-mail h5 {
+  margin: 0; }
+
+.mailbox-attachments {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0; }
+
+.mailbox-attachments li {
+  float: left;
+  width: 200px;
+  border: 1px solid #EEE;
+  margin-bottom: 10px;
+  margin-right: 10px; }
+
+.mailbox-attachment-icon {
+  text-align: center;
+  font-size: 65px;
+  color: #666;
+  padding: 20px 10px; }
+
+.mailbox-attachment-icon, .mailbox-attachment-info, .mailbox-attachment-size {
+  display: block; }
+
+.mailbox-attachment-icon.has-img {
+  padding: 0px; }
+
+.mailbox-attachment-icon.has-img > img {
+  max-width: 100%;
+  height: auto; }
+
+.mailbox-attachment-name {
+  font-weight: bold;
+  color: #666; }
+
+.mailbox-attachment-info {
+  padding: 10px;
+  background: #F4F4F4; }
+
+.mailbox-attachment-size {
+  color: #999;
+  font-size: 12px; }
+
 /* colors */
-body.theme-yellow a:not(.btn) {
+body.theme-yellow a:not([class]) {
   color: #f39c12; }
 body.theme-yellow .navbar {
   background: #f39c12;
@@ -1550,7 +1641,7 @@ body.theme-yellow .theme-selector {
 			theme theme-yellow ended! 
 			themeColor was #f39c12.
 ############################################################### */
-body.theme-red a:not(.btn) {
+body.theme-red a:not([class]) {
   color: #dd4b39; }
 body.theme-red .navbar {
   background: #dd4b39;
@@ -1625,7 +1716,7 @@ body.theme-red .theme-selector {
 			theme theme-red ended! 
 			themeColor was #dd4b39.
 ############################################################### */
-body.theme-purple a:not(.btn) {
+body.theme-purple a:not([class]) {
   color: #605ca8; }
 body.theme-purple .navbar {
   background: #605ca8;
@@ -1700,7 +1791,7 @@ body.theme-purple .theme-selector {
 			theme theme-purple ended! 
 			themeColor was #605ca8.
 ############################################################### */
-body.theme-green a:not(.btn) {
+body.theme-green a:not([class]) {
   color: #00a65a; }
 body.theme-green .navbar {
   background: #00a65a;
@@ -1775,7 +1866,7 @@ body.theme-green .theme-selector {
 			theme theme-green ended! 
 			themeColor was #00a65a.
 ############################################################### */
-body.theme-blue a:not(.btn) {
+body.theme-blue a:not([class]) {
   color: #3c8dbc; }
 body.theme-blue .navbar {
   background: #3c8dbc;
