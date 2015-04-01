@@ -11,6 +11,7 @@ a:focus{
 img{
 	max-width: 100%;
 	height: auto;
+	vertical-align: baseline;
 }
 p{
 	margin: 0 0 25px;
@@ -25,6 +26,7 @@ p{
 }
 .topheader{
 	padding: 12px 0 10px;
+	font-size: 13px;
 }
 .topheader .top-nav .dropdown{
 	border-right: 1px solid #f3f3f3;
@@ -270,6 +272,9 @@ h2{
 	color: #fff;
 	font-size: 19px;
 }
+.footer-middle img{
+	vertical-align: middle;
+}
 .footer-middle h3 em{
 	display: inline-block;
 	border-left: 1px solid;
@@ -311,7 +316,6 @@ h2{
 	margin: 0;
 }
 
-
-
+/* theme relivent classes */
 .theme-light-bg{background: #c9e3ee;}
 .theme-bg{background: #0eafdb;}
