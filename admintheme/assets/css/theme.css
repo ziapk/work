@@ -833,10 +833,10 @@ body.sidebar-show .footer {
 
 /* panel settings */
 .panel > .panel-body {
-  border-top: 1px solid #f0f0f0; }
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
 .panel-collapse {
-  border-top: 1px solid #f0f0f0; }
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
 .panel-primary > .panel-heading {
   color: #337AB7; }
@@ -897,7 +897,8 @@ body.sidebar-show .footer {
       content: "\f067"; }
 
 .panel-footer {
-  background: none; }
+  background: none;
+  border-top-color: rgba(0, 0, 0, 0.1); }
 
 .panel-heading .pagination {
   margin: 0; }
@@ -1564,6 +1565,28 @@ body.sidebar-show .footer {
 .mailbox-attachment-size {
   color: #999;
   font-size: 12px; }
+
+.lockscreen {
+  width: 320px;
+  margin: 50 auto; }
+  .lockscreen img {
+    float: left;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 5px;
+    margin-top: -15px; }
+  .lockscreen form {
+    background: #fff;
+    padding: 3px;
+    border-radius: 10px;
+    margin-bottom: 30px; }
+  .lockscreen .form-control:focus,
+  .lockscreen .form-control {
+    background: none;
+    box-shadow: none;
+    border: none; }
 
 /* colors */
 body.theme-yellow a:not([class]) {
