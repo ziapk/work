@@ -1,6 +1,6 @@
 $(document).ready(function () {
-	var top = $('.navigation-area').offset().top;
-	var height = $('.navigation-area').height();
+	var top = $('.main-nav-area').offset().top;
+	var height = $('.main-nav-area').height();
 	$(window).scroll(function (argument) {
 		if ($(this).scrollTop() > top) {
           $('body').addClass('nav-fixed');
