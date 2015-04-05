@@ -73,3 +73,17 @@ $(function () {
   });
 
 })
+
+
+/* for fixed-layout page only */
+$(document).ready(function () {
+	var hh = $('.header').outerHeight(true); // header height
+	var fh = $('.footer').outerHeight(true); // footer height
+	$(window).bind('resize load scroll', function () {
+		var wh = $(window).height();	// window height
+
+		$('.fixed-layout .main-content').height(wh - (hh + fh));
+		
+	})
+
+})

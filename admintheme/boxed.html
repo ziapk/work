@@ -12,12 +12,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/js/plugins/range-slider/css/ion.rangeSlider.css">
-        <link rel="stylesheet" href="assets/js/plugins/range-slider/css/ion.rangeSlider.skinSimple.css">
-        <link rel="stylesheet" href="assets/js/plugins/range-slider/css/ion.rangeSlider.skinNice.css">
-        <link rel="stylesheet" href="assets/js/plugins/range-slider/css/ion.rangeSlider.skinModern.css">
-        <link rel="stylesheet" href="assets/js/plugins/range-slider/css/ion.rangeSlider.skinFlat.css">
-        <link rel="stylesheet" href="assets/js/plugins/range-slider/css/ion.rangeSlider.skinHTML5.css">
         <link rel="stylesheet" href="assets/css/theme.css">
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -28,7 +22,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+        <div class="page-container">
         <!-- Add your site or application content here -->
         <header class="header">
             <nav class="navbar">
@@ -41,7 +35,7 @@
                   <a class="navbar-brand" href="#">THEME LOGO</a>
                   <a href="#" class="extend-sidebar" title="click here to show left sidebar"><span class="fa fa-bars"></span></a>
                 </div>
-
+            
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
@@ -115,13 +109,13 @@
                     <li><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
                   </ul>
                 </li>
-                <li>
+                <li class="active">
                   <a href="javascript:void(0);">
                     <i class="fa fa-files-o"></i><span>Layout Options</span><span class="label label-primary pull-right">4</span>
                   </a>
-                  <ul>
+                  <ul style="display: block;">
                     <li><a href="top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-                    <li><a href="boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
+                    <li class="active"><a href="boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
                     <li><a href="fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
                     <li><a href="collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
                   </ul>
@@ -143,17 +137,17 @@
                     <li><a href="inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
                   </ul>
                 </li>
-                <li class="active">
+                <li>
                   <a href="javascript:void(0);">
                     <i class="fa fa-laptop"></i>
                     <span>UI Elements</span>
                     <i class="fa fa-angle-left pull-right"></i>
                   </a>
-                  <ul style="display:block;">
+                  <ul>
                     <li><a href="general.html"><i class="fa fa-circle-o"></i> General</a></li>
                     <li><a href="icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
                     <li><a href="buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-                    <li class="active"><a href="slider.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
+                    <li><a href="slider.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
                     <li><a href="timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
                     <li><a href="models.html"><i class="fa fa-circle-o"></i> Modals</a></li>
                   </ul>
@@ -244,145 +238,33 @@
             <main class="main-content">
               <div class="main-content-inner">
                 <div class="page-title">
-                    <h1>Sliders <small>range sliders</small></h1>
+                    <h1>Top Navigation <small>Example 2.0</small></h1>
                     <ol class="breadcrumb">
                         <li><a href="index.html"><span class="fa fa-home"></span></a></li>
-                        <li><a href="#">UI Elements</a></li>
-                        <li class="active">Sliders</li>
+                        <li><a href="javascript:void(0);">Layout Options</a></li>
+                        <li class="active">Top Navigation</li>
                     </ol>
                 </div>
-               
-                  <div class="row">
-                    <div class="col-md-6">
-                     <div class="panel panel-info">
-                      <div class="panel-heading" role="tab">
-                          <h4 class="panel-title"><div class="fa fa-bullhorn initial-icon"></div> Ion Simple Slider</h4>
-                          <ul class="panel-controls">
-                              <li>
-                                  <a data-toggle="collapse" href="#tb1" aria-expanded="true"><span class="fa"></span></a>
-                              </li>
-                              <li>
-                                  <a data-dismiss="panel" href="#"><span class="fa fa-times"></span></a>
-                              </li>
-                          </ul>
-                      </div>
-                      <div id="tb1" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                          <div class="skin-simple">
-                            <h4>Simple Slider</h4>
-                            <input id="simple_1" type="text" name="simple_1" value="" />                            
-                            <h4>Range Slider</h4>
-                            <input id="simple_2" type="text" name="simple_2" value="" />
-                            <h4>Range Slider with Steps</h4>
-                            <input id="simple_3" type="text" name="simple_3" value="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="panel panel-primary">
+                  <div class="panel-heading" role="tab">
+                      <h4 class="panel-title">Title</h4>
+                      <ul class="panel-controls">
+                          <li>
+                              <a data-toggle="collapse" href="#tb1" aria-expanded="true"><span class="fa"></span></a>
+                          </li>
+                          <li>
+                              <a data-dismiss="panel" href="#"><span class="fa fa-times"></span></a>
+                          </li>
+                      </ul>
                   </div>
-                  <div class="col-md-6">
-                      <div class="panel panel-info">
-                        <div class="panel-heading" role="tab">
-                            <h4 class="panel-title"><div class="fa fa-bullhorn initial-icon"></div> Ion Nice Slider</h4>
-                            <ul class="panel-controls">
-                                <li>
-                                    <a data-toggle="collapse" href="#tb2" aria-expanded="true"><span class="fa"></span></a>
-                                </li>
-                                <li>
-                                    <a data-dismiss="panel" href="#"><span class="fa fa-times"></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="tb2" class="panel-collapse collapse in">
-                          <div class="panel-body">
-                            <div class="skin-nice">
-                              <h4>Nice Slider</h4>
-                              <input id="nice_1" type="text" name="nice_1" value="" />                            
-                              <h4>Range Slider</h4>
-                              <input id="nice_2" type="text" name="nice_2" value="" />
-                              <h4>Range Slider with Steps</h4>
-                              <input id="nice_3" type="text" name="nice_3" value="" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                  <div id="tb1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <p>Start creating your amazing application!</p>
                     </div>
+                    <div class="panel-footer">Footer</div>
                   </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="panel panel-info">
-                        <div class="panel-heading" role="tab">
-                            <h4 class="panel-title"><div class="fa fa-bullhorn initial-icon"></div> HTML5 Slider </h4>
-                            <ul class="panel-controls">
-                                <li>
-                                    <a data-toggle="collapse" href="#tb4" aria-expanded="true"><span class="fa"></span></a>
-                                </li>
-                                <li>
-                                    <a data-dismiss="panel" href="#"><span class="fa fa-times"></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="tb4" class="panel-collapse collapse in">
-                          <div class="panel-body">
-                            <div class="skin-html5">
-                              <h4>HTML5 Slider</h4>
-                              <input id="html5_1" type="text" name="html5_1" value="" />                            
-                              <h4>Range Slider</h4>
-                              <input id="html5_2" type="text" name="html5_2" value="" />
-                              <h4>Range Slider with Steps</h4>
-                              <input id="html5_3" type="text" name="html5_3" value="" />
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="panel panel-info">
-                        <div class="panel-heading" role="tab">
-                            <h4 class="panel-title"><div class="fa fa-bullhorn initial-icon"></div> Modern Slider </h4>
-                            <ul class="panel-controls">
-                                <li>
-                                    <a data-toggle="collapse" href="#tb3" aria-expanded="true"><span class="fa"></span></a>
-                                </li>
-                                <li>
-                                    <a data-dismiss="panel" href="#"><span class="fa fa-times"></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="tb3" class="panel-collapse collapse in">
-                          <div class="panel-body">
-                            <div class="skin-modern">
-                              <h4>Moderen Slider</h4>
-                              <input id="modern_1" type="text" name="modern_1" value="" />                            
-                              <h4>Range Slider</h4>
-                              <input id="modern_2" type="text" name="modern_2" value="" />
-                              <h4>Range Slider with Steps</h4>
-                              <input id="modern_3" type="text" name="modern_3" value="" />
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
+
                 </div>
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="panel panel-info">
-                      <div class="panel-heading" role="tab">
-                          <h4 class="panel-title"><div class="fa fa-bullhorn initial-icon"></div> Flat Slider </h4>
-                      </div>
-                      <div class="panel-body">
-                        <div class="skin-flat">
-                          <h4>Flat Slider</h4>
-                          <input id="flat_1" type="text" name="flat_1" value="" />                            
-                          <h4>Range Slider</h4>
-                          <input id="flat_2" type="text" name="flat_2" value="" />
-                          <h4>Range Slider with Steps</h4>
-                          <input id="flat_3" type="text" name="flat_3" value="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- row -->
               </div><!-- main-content-inner -->
             </main><!-- main-content -->
             <footer class="footer">
@@ -390,6 +272,8 @@
             </footer>
 
         </div>
+        </div>
+        <!-- page-container -->
         <div class="theme-selector">
           <a href="javascript:void(0);"><span class="fa fa-cog"></span></a>
           <ul class="theme-list">
@@ -409,7 +293,6 @@
         <script src="assets/js/plugins/jquery-jvectormap-1.2.2.min.js"></script>
         <script src="assets/js/plugins/jquery-jvectormap-world-mill-en.js"></script>
         <script src="assets/js/plugins/chart.min.js"></script>
-        <script src="assets/js/plugins/range-slider/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
         <script src="assets/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -420,36 +303,6 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-        <script type="text/javascript">
-        $(document).ready(function () {
-           $("#simple_1,#nice_1, #html5_1, #modern_1, #flat_1").ionRangeSlider({
-            });
-           $("#simple_2, #nice_2, #html5_2, #modern_2,  #flat_2").ionRangeSlider({
-              min: 0,
-              max: 5000,
-              from: 1000,
-              to: 4000,
-              type: 'double',
-              step: 1,
-              prefix: "$",
-              prettify: false,
-              hasGrid: true
-            });
-           $("#simple_3, #nice_3, #html5_3, #modern_3,  #flat_3").ionRangeSlider({
-                min: 0,
-                max: 5000,
-                from: 2000,
-                to: 3000,
-                type: 'double',
-                step: 1,
-                prefix: "$",
-                prettify: false,
-                hasGrid: true,
-                grid: true,
-                step: 250
-            });
-        })
         </script>
     </body>
 </html>
