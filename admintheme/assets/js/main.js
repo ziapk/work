@@ -85,5 +85,7 @@ $(document).ready(function () {
 		$('.fixed-layout .main-content').height(wh - (hh + fh));
 		
 	})
-
+})
+$(document).ready(function () {
+	$('.slimscroll').slimScroll();
 })
