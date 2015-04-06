@@ -578,6 +578,9 @@ h3 {
   font-size: 1.5rem; }
 
 /* header */
+.navbar-header {
+  width: 275px; }
+
 .navbar {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
