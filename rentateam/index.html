@@ -332,44 +332,26 @@
             <p>Here are some other projects that we've worked on. <span class="clr">]]</span></p>
         </div>
         
-        <div id="hero">
-            <div class="ui-group tabs-item">
-                <div class="filters button-group js-radio-button-group">
-                    <button class="button is-checked" data-filter="*">ALL</button>
-                    <button class="button" data-filter=".web">WEB</button>
-                    <button class="button" data-filter=".apps">APPS</button>
-                    <button class="button" data-filter=".ios">IOS</button>
-                    <button class="button" data-filter=".android">ANDROID</button>
-                </div>
-            </div>
-            
-            <div class="isotope">
-                <div class="element-item  ios" data-category="transition">
-                    <div class="product"><a href="#"><img src="images/project-1.jpg" alt=""></a></div>
-                </div>
-                <div class="element-item android ios" data-category="metalloid">
-                    <div class="product"><a href="#"><img src="images/project-2.jpg" alt=""></a></div>
-                </div>
-                <div class="element-item android apps web" data-category="post-transition">
-                    <div class="product"><a href="#"><img src="images/project-3.jpg" alt=""></a></div>
-                </div>
-                <div class="element-item android apps " data-category="post-transition">
-                    <div class="product"><a href="#"><img src="images/project-4.jpg" alt=""></a></div>
-                </div>
-                <div class="element-item apps ios apps web" data-category="transition">
-                    <div class="product"><a href="#"><img src="images/project-5.jpg" alt=""></a></div>
-                </div>
-                <div class="element-item web" data-category="metalloid">
-                    <div class="product"><a href="#"><img src="images/project-6.jpg" alt=""></a></div>
-                </div>
-                <div class="element-item ios apps web" data-category="post-transition">
-                    <div class="product"><a href="#"><img src="images/project-7.jpg" alt=""></a></div>
-                </div>
-                <div class="element-item android web " data-category="post-transition">
-                    <div class="product"><a href="#"><img src="images/project-8.jpg" alt=""></a></div>
-                </div>
-            </div> 
-        </div><!--hero -->
+        
+        <ul class="list-inline filter-list tabs-item">
+            <li class="active"><a href="#" title="" data-filter="*">All</a></li>
+            <li><a href="#" title="" data-filter=".web">Logo</a></li>
+            <li><a href="#" title="" data-filter=".apps">Template</a></li>
+            <li><a href="#" title="" data-filter=".ios">Business</a></li>
+            <li><a href="#" title="" data-filter=".android">Photography</a></li>
+        </ul>
+        
+        <ul class="items_container">
+        	<li class="android"><div class="product"><a href="#"><img src="images/project-1.jpg" alt=""></a></div></li>
+            <li class="ios android"><div class="product"><a href="#"><img src="images/project-2.jpg" alt=""></a></div></li>
+            <li class="apps ios"><div class="product"><a href="#"><img src="images/project-3.jpg" alt=""></a></div></li>
+            <li class="web"><div class="product"><a href="#"><img src="images/project-4.jpg" alt=""></a></div></li>
+            <li class="web apps ios"><div class="product"><a href="#"><img src="images/project-5.jpg" alt=""></a></div></li>
+            <li class="web apps v"><div class="product"><a href="#"><img src="images/project-6.jpg" alt=""></a></div></li>
+            <li class="web ios"><div class="product"><a href="#"><img src="images/project-7.jpg" alt=""></a></div></li>
+            <li class="web apps android"><div class="product"><a href="#"><img src="images/project-8.jpg" alt=""></a></div></li>
+        </ul>
+        
         
     </div>    
 </div><!--portfolio-section-wrap -->
@@ -516,8 +498,41 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script type="text/javascript" src="js/jquery.bxslider.js"></script>
-<script type="text/javascript" src="js/isotope-docs.min.js"></script>
+
+<!--<script type="text/javascript" src="js/isotope-docs.min.js"></script> -->
+<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+
 <script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript">
+	$(function () {
+		
+		
+		
+		$(window).load(function (argument) {
+		 var $container = $('.items_container');
+		 var $width = $('.items_container li');;
+		 $container.isotope({
+		   layoutMode: 'fitRows',
+		 })
+		 $('.filter-list').on( 'click', 'a', function() {
+		   if($(this).parent().hasClass('active')){
+		   }
+		   else{
+			$(this).parent().parent().children().removeClass('active');
+			$(this).parent().addClass('active');
+		   }
+		   var filterValue = $(this).attr('data-filter');
+		   $container.isotope({ filter: filterValue });
+		   return false;
+		 });
+		})
+		
+		
+	});
+	
+	
+</script>
 
 
 </body>
