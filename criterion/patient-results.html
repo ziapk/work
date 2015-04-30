@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>For Patients | Rehabilitation</title>
+        <title>For Patients | Patient Results</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -111,8 +111,8 @@
 	                    <li><a href="patient-information.html">Patient Information</a></li>
 	                    <li><a href="patient-care.html">Patient Care</a></li>
 	                    <li><a href="pain-management.html">Pain Management</a></li>
-	                    <li class="active"><a href="rehabilitation.html">Rehabilitation</a></li>
-	                    <li><a href="patient-results.html">Patient Results</a></li>
+	                    <li><a href="rehabilitation.html">Rehabilitation</a></li>
+	                    <li class="active"><a href="patient-results.html">Patient Results</a></li>
 	                    <li><a href="patient-faq.html">Patient FAQs</a></li>
 	                </ul>
 	            </div>
@@ -129,24 +129,21 @@
 	        	</aside>
 		    	<section class="content-area">
 		    		<div class="page-header">
-		    			<h2>Rehabilitation</h2>
+		    			<h2>Patient Results</h2>
                     </div>
-                    <p>In the past, drugs were almost exclusively prescribed to either stimulate or relax muscles and nerves. The results are a varying degree of symptomatic relief coupled with unwanted side-effects. As a result, physicians often utilize Neuromuscular Electrical Stimulation (NMES) as a safe and effective alternative to prescription drugs for not only pain relief but also therapeutic benefits. NMES is a trusted, clinically-proven, noninvasive therapy for muscle rehabilitation post injury, surgery or disease.</p> 
-                    <p><img src="assets/images/img5.jpg" alt=""></p>
-                    <h3>Benefits of TENS</h3>
-                    
-                    <ul>
-                        <li>Effective and safe alternative to prescription, pain control medication with NO known side-effects or risk of overdose.</li>
-                        <li>Decreases pain and helps the patient remain functional and productive.</li>
-                        <li>Easy to administer, typically reimbursed, and cost effective - by often reducing the need for other therapy services.</li>
-                        <li>Allows for patient control over pain management.</li>
-                        <li>Targets acute and chronic pain of neck, back, shoulder, knee, wrists and hands.</li>
-                        <li>Easily prescribed.</li> 
-                    </ul>
-                    <p>Learn how to obtain <a href="#">Criterion Products</a>.</p>
-                    <h3>How does NMES work?</h3>
-                    <p>Nerves and muscles are controlled by stimulation. Without stimulation, nerves and muscles begin to atrophy, becoming weak and disuse. This is often the case following trauma or surgery. Conversely, nerves and muscles may become over-stimulated by mechanical strain of the posture or occupational type.</p>
-                    <p>In either case, NMES is an effective therapeutic treatment. NMES stimulates nerves and muscles through electrical impulses. Accordingly, patients can receive therapeutic treatment because NMES creates involuntary muscle contractions. This therapy improves and maintains muscle tone without actual physical activity. These same involuntary muscle contractions also help reduce spasms, re-educate muscles, and improve range of motion.</p>
+                    <p>Since 2003, Criterion has surveyed patients regarding our products and services. The feedback provided by our patients is a valuable tool which influences decision making - resulting in positive outcomes. Ultimately, we are able to maintain high customer satisfaction because welisten to our patients.</p>
+                    <p>In order to maintain true scientific integrity, Criterion randomly chooses patients from our active database. All surveys were conducted via phone. The results of this survey are reflective of 5216 patients who willingly participated in our survey and have consented to posting their commentary.</p>
+                    <p><a href="#" class="btn btn-theme btn-lg pull-right">Leave us feedback</a>Since all feedback is valuable to us, we will continue to conduct randomized surveys to maintain integrity in our results.</p>
+                    <h3>Patient Survey Results</h3>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div id="chart1" style="height: 300px; width: 100%;"></div>                            
+                        </div>
+                        <div class="col-md-5">
+                            <div id="chart2" style="height: 300px; width: 100%;"></div>                            
+                        </div>
+                    </div>
+                    <div id="chart3" style="height: 300px; width: 100%;"></div>                            
 		    	</section>
 		    </div>
         </main>
@@ -270,11 +267,11 @@
                 </div>
             </div>
         </footer>
+        <script src="assets/js/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
 
@@ -287,5 +284,174 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+        <script type="text/javascript">
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chart1",
+            {
+                title:{
+                    text: "Products/Services",
+                    fontSize : 12,
+                    fontColor : "#676877",
+                    verticalAlign: "top", // "top", "center", "bottom"
+                    horizontalAlign: "left" // "left", "right", "center"
+
+                },
+                axisY:{              
+                    labelFontSize: 2,
+                    labelFontColor: "white",
+                    gridColor: "white" ,
+                },
+                axisX:{
+                    labelAngle: -40,
+                },
+                        animationEnabled: true,
+                toolTip:{
+                    shared: true,
+                },
+                legend:{
+                    verticalAlign: "top",
+                    horizontalAlign: "right"
+                },
+                data:[
+                {        
+                    type: "stackedColumn100",
+                    showInLegend: true, 
+                    name: "Dissatisfied",
+                    color: "#437346",
+                    dataPoints: [
+                        {y: 6.6, label: "Customer Service" },
+                        {y: 7.9, label: "Billing Debt." },
+                        {y: 10.2, label: "Technical Support" },
+                        {y: 5.6, label: "Equipment" },
+                        {y: 2.6, label: "Supples" },
+                        {y: 1.9, label: "Shipping" },
+                    ]
+                }, 
+                {        
+                    type: "stackedColumn100",
+                    showInLegend: true, 
+                    name: "Satisfied",
+                    color: "#97d95c",
+                    dataPoints: [
+                        {y: 93.4, label: "Customer Service" },
+                        {y: 92.1, label: "Billing Debt." },
+                        {y: 89.8, label: "Technical Support" },
+                        {y: 94.4, label: "Equipment" },
+                        {y: 97.4, label: "Supples" },
+                        {y: 98.1, label: "Shipping" },
+                    ]
+                },
+                ]
+            });
+            chart.render();
+            var chart2 = new CanvasJS.Chart("chart2",
+            {
+                title:{
+                    text: "Patient Outcomes",
+                    fontSize : 12,
+                    fontColor : "#676877",
+                    verticalAlign: "top", // "top", "center", "bottom"
+                    horizontalAlign: "left" // "left", "right", "center"
+
+                },
+                axisY:{
+                    labelFontSize: 2,
+                    labelFontColor: "white",
+                    gridColor: "white" ,
+                },
+                axisX:{
+                    labelAngle: -40,
+                },
+                animationEnabled: true,
+                toolTip:{
+                    shared: true,
+                },
+                legend:{
+                    verticalAlign: "top",
+                    horizontalAlign: "right"
+                },
+                data:[
+                {        
+                    type: "stackedColumn100",
+                    showInLegend: true, 
+                    name: "Dissatisfied",
+                    color: "#437346",
+                    dataPoints: [
+                        {y: 9.4, label: "Pain Management" },
+                        {y: 12.4, label: "Rehabilitation" },
+                        {y: 3.5, label: "Reduce Swelling" },
+                    ]
+                }, 
+                {        
+                    type: "stackedColumn100",
+                    showInLegend: true, 
+                    name: "Satisfied",
+                    color: "#97d95c",
+                    dataPoints: [
+                        {y: 90.6, label: "Pain Management" },
+                        {y: 87.6, label: "Rehabilitation" },
+                        {y: 96.5, label: "Reduce Swelling" },
+                    ]
+                },
+                ]
+            });
+            chart2.render();
+            var chart3 = new CanvasJS.Chart("chart3",
+            {
+                title:{
+                    text: "Others",
+                    fontSize : 12,
+                    fontColor : "#676877",
+                    verticalAlign: "top", // "top", "center", "bottom"
+                    horizontalAlign: "left" // "left", "right", "center"
+
+                },
+                axisY:{
+                    labelFontSize: 2,
+                    labelFontColor: "white",
+                    gridColor: "white" ,
+                },
+                animationEnabled: true,
+                toolTip:{
+                    shared: true,
+                },
+                legend:{
+                    verticalAlign: "top",
+                    horizontalAlign: "right"
+                },
+                data:[
+                {        
+                    type: "stackedColumn100",
+                    showInLegend: true, 
+                    name: "No",
+                    color: "#437346",
+                    dataPoints: [
+                        {y: 42.3, label: "Reduce Pain Medication" },
+                        {y: 25.7, label: "Reduce PT Costs" },
+                        {y: 2.8, label: "Increase Personal Activity" },
+                        {y: 92.4, label: "..Adverse Side Effects" },
+                        {y: 9.7, label: "Recommend to Others" },
+                    ]
+                }, 
+                {        
+                    type: "stackedColumn100",
+                    showInLegend: true, 
+                    name: "Yes",
+                    color: "#97d95c",
+                    dataPoints: [
+                        {y: 57.7, label: "Reduce Pain Medication" },
+                        {y: 74.3, label: "Reduce PT Costs" },
+                        {y: 97.2, label: "Increase Personal Activity" },
+                        {y: 7.6, label: "..Adverse Side Effects" },
+                        {y: 90.3, label: "Recommend to Others" },
+                    ]
+                },
+                ]
+            });
+            chart3.render();
+        }
+        </script>
+        <script type="text/javascript" src="assets/js/canvasjs.min.js"></script>
+
     </body>
 </html>
