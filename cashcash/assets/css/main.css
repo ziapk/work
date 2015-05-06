@@ -373,11 +373,12 @@ img {
   color: #ffbc19; }
 
 /* for sticky footer */
-.wrap, body, html {
+body, html {
   min-height: 100%;
   height: 100%; }
 
 .wrap {
+  min-height: 100%;
   padding-bottom: 300px;
   margin-bottom: -300px; }
 
