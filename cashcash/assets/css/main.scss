@@ -35,6 +35,7 @@ img{
 .video-frame{
     margin-bottom: 54px;
 }
+
 /* Getaccessfree-section */
 .getaccessfree-section{
     text-transform: uppercase;
@@ -42,6 +43,7 @@ img{
     font-size: 20px;
     color: #fff;
     padding-top: 20px;
+    margin-bottom: 30px;
     .form-control{
         height: 55px;    
         padding: 15px 16px;
@@ -53,6 +55,7 @@ img{
         border-radius: 10px;
         font-size: 32px;
         font-weight: 900;
+        line-height: 0.9;
         color : #010000;
         &:hover{
             color: #000;
@@ -70,9 +73,6 @@ img{
     border: none;
     border-radius: 0;
 }
-
-
-
 .live-feed{
     font-size: 24px;
     background: #0f3f64;
@@ -84,9 +84,11 @@ img{
     white-space: nowrap;
     overflow: hidden;
     padding: 4px;
-    margin-top: 2px;
+    line-height: 29px;
     background: url(../images/ticker.jpg) repeat-x center top;
-
+}
+marquee{
+    display: block;
 }
 .live-feed strong{
     text-transform: uppercase;
@@ -137,22 +139,30 @@ img{
     }
 }
 .btn-red{
-    color : #fff;
-    background: url(../images/btn-red.jpg) repeat-x;
     font-size: 32px;
     font-weight: 900;
     padding: 9px 12px;
-    border-radius: 15px;
+    border-radius: 10px;
     text-transform: uppercase;
     white-space: normal;
     line-height: 0.8;
     text-shadow: -1px -1px 1px #000;
     font-style: italic;
     display: inline-block;
+
+    border: none;
+    background: #d80000;
+    background: -moz-linear-gradient(top, #d80000 0%, #930700 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d80000), color-stop(100%,#930700));
+    background: -webkit-linear-gradient(top, #d80000 0%,#930700 100%);
+    background: -o-linear-gradient(top, #d80000 0%,#930700 100%);
+    background: -ms-linear-gradient(top, #d80000 0%,#930700 100%);
+    background: linear-gradient(to bottom, #d80000 0%,#930700 100%);    
     border-bottom: 5px solid #600300;
+    color: #fff;
     &:hover{
-        color: #fff;
-        background: url(../images/btn-red.jpg) repeat-x;
+    color: #fff;
+    background: #930700;    
     }
 }
 .btn-danger{

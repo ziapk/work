@@ -36,7 +36,8 @@ img {
   text-align: center;
   font-size: 20px;
   color: #fff;
-  padding-top: 20px; }
+  padding-top: 20px;
+  margin-bottom: 30px; }
   .getaccessfree-section .form-control {
     height: 55px;
     padding: 15px 16px; }
@@ -47,6 +48,7 @@ img {
     border-radius: 10px;
     font-size: 32px;
     font-weight: 900;
+    line-height: 0.9;
     color: #010000; }
     .getaccessfree-section .btn-yellow:hover {
       color: #000; }
@@ -72,8 +74,11 @@ img {
   white-space: nowrap;
   overflow: hidden;
   padding: 4px;
-  margin-top: 2px;
+  line-height: 29px;
   background: url(../images/ticker.jpg) repeat-x center top; }
+
+marquee {
+  display: block; }
 
 .live-feed strong {
   text-transform: uppercase; }
@@ -120,22 +125,29 @@ img {
     box-shadow: none; }
 
 .btn-red {
-  color: #fff;
-  background: url(../images/btn-red.jpg) repeat-x;
   font-size: 32px;
   font-weight: 900;
   padding: 9px 12px;
-  border-radius: 15px;
+  border-radius: 10px;
   text-transform: uppercase;
   white-space: normal;
   line-height: 0.8;
   text-shadow: -1px -1px 1px #000;
   font-style: italic;
   display: inline-block;
-  border-bottom: 5px solid #600300; }
+  border: none;
+  background: #d80000;
+  background: -moz-linear-gradient(top, #d80000 0%, #930700 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d80000), color-stop(100%, #930700));
+  background: -webkit-linear-gradient(top, #d80000 0%, #930700 100%);
+  background: -o-linear-gradient(top, #d80000 0%, #930700 100%);
+  background: -ms-linear-gradient(top, #d80000 0%, #930700 100%);
+  background: linear-gradient(to bottom, #d80000 0%, #930700 100%);
+  border-bottom: 5px solid #600300;
+  color: #fff; }
   .btn-red:hover {
     color: #fff;
-    background: url(../images/btn-red.jpg) repeat-x; }
+    background: #930700; }
 
 .btn-danger {
   background: #e64c2d; }
