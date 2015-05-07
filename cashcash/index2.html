@@ -326,6 +326,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="country.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -350,21 +351,57 @@
                     jQuery('#areacode').attr('value', json.name);                                
                 }
             });*/
-            var c = null;
+           /* var c = null;
             $.get("http://ipinfo.io", function(response) {
                 //console.log(response.city, response.country);
                 c = response.country;
-                //alert(country)
-            }, "jsonp");
-            $.get("country.json", function(response) {
+            }, "jsonp");*/
+
+            /*$.get("http://ziapk.github.io/work/cashcash/country.json", function(response) {
                 //console.log(response.city, response.country);
                 //c = response.country;
                 alert(response.name)
-            }, "jsonp");
+            }, "jsonp");*/
+/*            $.ajax({
+              dataType: "json",
+              url: "country.json",
+              data: data,
+              success: success
+            });*/
+            /*var jqxhr = $.getJSON( "country.json", function(res) {
+              console.log( res.name );
 
-
+            })*/
         });
-        </script>
+    </script>
+    <select id="areas" class="hide"></select>
+    <input type="text" id="city" class="hide">
+    <script type="text/javascript">
+    $.getJSON("http://www.telize.com/geoip?callback=?",
+        function(response) {
+            document.getElementById('city').value = response.country;
+        }
+    );
+    $.each(country, function(i, field){
+        $("#areas").append('<option value="'+field.dial_code+'">'+field.name+'</option>');
+        $("#areas option").first().attr('selected', '')
+
+    });
+    $(window).load(function () {
+        var v1 = document.getElementById('city').value;
+        var v2 = $('#areas');
+        $('#areas option').each(function () {
+            var v3 = $(this).html();
+            //alert(v1)
+            if(v1 == v3) {
+                v = $(this).val()
+                $('#areacode').attr('value', v);
+            }
+        })
+
+    })
+
     </script>
     </body>
+
 </html>
