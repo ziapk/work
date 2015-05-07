@@ -254,23 +254,25 @@ marquee{
     color: #fff;    
     border: 1px solid #fff;
     text-align: center;
+    th{
+        color: $themeColor;
+        font-weight: 600;
+    }
+    tr:hover td{
+        color : $green;
+    }
+    > thead > tr > th{
+        border: none;
+        vertical-align: middle;
+    }
+    > tbody > tr > td{
+        vertical-align: middle;
+    }
+    > tbody > tr > td:first-child{
+        text-transform: uppercase;
+        text-align: left;
+    }
 }
-.table th{
-    color: $themeColor;
-    font-weight: 600;
-}
-.table > thead > tr > th{
-    border: none;
-    vertical-align: middle;
-}
-.table > tbody > tr > td{
-    vertical-align: middle;
-}
-.table > tbody > tr > td:first-child{
-    text-transform: uppercase;
-    text-align: left;
-}
-
 .text-danger{
     color: $red;
 }

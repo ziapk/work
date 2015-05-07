@@ -232,21 +232,19 @@ marquee {
   color: #fff;
   border: 1px solid #fff;
   text-align: center; }
-
-.table th {
-  color: #ffbc19;
-  font-weight: 600; }
-
-.table > thead > tr > th {
-  border: none;
-  vertical-align: middle; }
-
-.table > tbody > tr > td {
-  vertical-align: middle; }
-
-.table > tbody > tr > td:first-child {
-  text-transform: uppercase;
-  text-align: left; }
+  .table th {
+    color: #ffbc19;
+    font-weight: 600; }
+  .table tr:hover td {
+    color: #6cb03a; }
+  .table > thead > tr > th {
+    border: none;
+    vertical-align: middle; }
+  .table > tbody > tr > td {
+    vertical-align: middle; }
+  .table > tbody > tr > td:first-child {
+    text-transform: uppercase;
+    text-align: left; }
 
 .text-danger {
   color: #cf2323; }
