@@ -209,12 +209,17 @@ marquee{
 }
 .left-live-update-section{
     background: #102135;
-    width: 280px;
+    width: 600px;
     position: fixed;
-    left: 0;
-    top: 30%;
+    left: 50%;
+    margin-left: -300px;
+    top: 10%;
     font-size: 20px;
     padding: 5px 15px;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    display: none;
+    z-index: 99;
     span{
         font-weight: 600;
     }
@@ -222,15 +227,9 @@ marquee{
         font-weight: bold;
         font-size: 24px;
     }
-    @media(max-width: 1400px){
-        font-size: 16px;
-        width: 250px;
-        strong{
-            font-size: 20px;
-        }
-    }
-    @media(max-width: 979px){
-        display: none;
+    .news-dismiss{
+        color: #fff;
+        float: right;
     }
 }
 .banner{
@@ -271,6 +270,32 @@ marquee{
             font-size: 60px;
             font-weight: 800;
             line-height: 0.9;
+        }
+
+    }
+    @media(max-width: 979px){
+        .banner-left-corner{
+            display: none;
+        }
+        .banner-data{
+            span{
+                min-width: inherit;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+    @media(max-width: 979px){
+        .banner-data{
+            span{
+                font-size: 20px;
+            }
+            strong{
+                font-size: 40px;
+            }
+            em{
+                font-size: 15px;
+            }
         }
 
     }
