@@ -49,19 +49,15 @@ a:hover{
     width: 100%;
     border-collapse: collapse;
     border-spacing: 1px;
-    width: 100%;
 }
 .table td{
     display: table-cell;
     padding: 45px;
     vertical-align: middle;
-    width: 325px;
+    width: 255px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-.table td:last-child{
-    width: 236px;
 }
 .table tr:last-child td{
     padding-top: 20px;
