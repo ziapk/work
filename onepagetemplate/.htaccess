@@ -1,18 +1,18 @@
 <IfModule mod_expires.c>
 
     ExpiresActive on
-    ExpiresDefault                                      "access plus 1 hour"
+    ExpiresDefault                                      "access 10 minutes"
 
   # CSS
 
-    ExpiresByType text/css                              "access plus 1 hour"
+    ExpiresByType text/css                              "access 10 minutes"
 
 
   # Data interchange
 
-    ExpiresByType application/atom+xml                  "access plus 1 hour"
-    ExpiresByType application/rdf+xml                   "access plus 1 hour"
-    ExpiresByType application/rss+xml                   "access plus 1 hour"
+    ExpiresByType application/atom+xml                  "access 10 minutes"
+    ExpiresByType application/rdf+xml                   "access 10 minutes"
+    ExpiresByType application/rss+xml                   "access 10 minutes"
 
     ExpiresByType application/json                      "access plus 0 seconds"
     ExpiresByType application/ld+json                   "access plus 0 seconds"
@@ -24,8 +24,8 @@
 
   # Favicon (cannot be renamed!) and cursor images
 
-    ExpiresByType image/vnd.microsoft.icon              "access plus 1 hour"
-    ExpiresByType image/x-icon                          "access plus 1 hour"
+    ExpiresByType image/vnd.microsoft.icon              "access 10 minutes"
+    ExpiresByType image/x-icon                          "access 10 minutes"
 
   # HTML
 
@@ -34,55 +34,55 @@
 
   # JavaScript
 
-    ExpiresByType application/javascript                "access plus 1 hour"
-    ExpiresByType application/x-javascript              "access plus 1 hour"
-    ExpiresByType text/javascript                       "access plus 1 hour"
+    ExpiresByType application/javascript                "access 10 minutes"
+    ExpiresByType application/x-javascript              "access 10 minutes"
+    ExpiresByType text/javascript                       "access 10 minutes"
 
 
   # Manifest files
 
-    ExpiresByType application/manifest+json             "access plus 1 hour"
+    ExpiresByType application/manifest+json             "access 10 minutes"
     ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
     ExpiresByType text/cache-manifest                   "access plus 0 seconds"
 
 
   # Media files
 
-    ExpiresByType audio/ogg                             "access plus 1 hour"
-    ExpiresByType image/bmp                             "access plus 1 hour"
-    ExpiresByType image/gif                             "access plus 1 hour"
-    ExpiresByType image/jpeg                            "access plus 1 hour"
-    ExpiresByType image/png                             "access plus 1 hour"
-    ExpiresByType image/svg+xml                         "access plus 1 hour"
-    ExpiresByType image/webp                            "access plus 1 hour"
-    ExpiresByType video/mp4                             "access plus 1 hour"
-    ExpiresByType video/ogg                             "access plus 1 hour"
-    ExpiresByType video/webm                            "access plus 1 hour"
+    ExpiresByType audio/ogg                             "access 10 minutes"
+    ExpiresByType image/bmp                             "access 10 minutes"
+    ExpiresByType image/gif                             "access 10 minutes"
+    ExpiresByType image/jpeg                            "access 10 minutes"
+    ExpiresByType image/png                             "access 10 minutes"
+    ExpiresByType image/svg+xml                         "access 10 minutes"
+    ExpiresByType image/webp                            "access 10 minutes"
+    ExpiresByType video/mp4                             "access 10 minutes"
+    ExpiresByType video/ogg                             "access 10 minutes"
+    ExpiresByType video/webm                            "access 10 minutes"
 
 
   # Web fonts
 
     # Embedded OpenType (EOT)
-    ExpiresByType application/vnd.ms-fontobject         "access plus 1 hour"
-    ExpiresByType font/eot                              "access plus 1 hour"
+    ExpiresByType application/vnd.ms-fontobject         "access 10 minutes"
+    ExpiresByType font/eot                              "access 10 minutes"
 
     # OpenType
-    ExpiresByType font/opentype                         "access plus 1 hour"
+    ExpiresByType font/opentype                         "access 10 minutes"
 
     # TrueType
-    ExpiresByType application/x-font-ttf                "access plus 1 hour"
+    ExpiresByType application/x-font-ttf                "access 10 minutes"
 
     # Web Open Font Format (WOFF) 1.0
-    ExpiresByType application/font-woff                 "access plus 1 hour"
-    ExpiresByType application/x-font-woff               "access plus 1 hour"
-    ExpiresByType font/woff                             "access plus 1 hour"
+    ExpiresByType application/font-woff                 "access 10 minutes"
+    ExpiresByType application/x-font-woff               "access 10 minutes"
+    ExpiresByType font/woff                             "access 10 minutes"
 
     # Web Open Font Format (WOFF) 2.0
-    ExpiresByType application/font-woff2                "access plus 1 hour"
+    ExpiresByType application/font-woff2                "access 10 minutes"
 
 
   # Other
 
-    ExpiresByType text/x-cross-domain-policy            "access plus 1 hour"
+    ExpiresByType text/x-cross-domain-policy            "access 10 minutes"
 
 </IfModule>
