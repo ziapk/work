@@ -1,0 +1,21 @@
+This zip file contains optimized resources for http://ziapk.github.io/work/ty-happy/. The optimized resources are listed below in the format of: 
+filename: url
+
+Note: We only include up to 10 MB of optimized contents. If the
+optimized contents of your page are larger than 10 MB, we list them in
+this file too, with 'NOT INCLUDED' to indicate those URLs require
+further optimization.
+
+css/normalize.css: http://ziapk.github.io/work/ty-happy/css/normalize.css
+css/bootstrap.min.css: http://ziapk.github.io/work/ty-happy/css/bootstrap.min.css
+css/font-awesome.min.css: http://ziapk.github.io/work/ty-happy/css/font-awesome.min.css
+css/main.css: http://ziapk.github.io/work/ty-happy/css/main.css
+js/modernizr-2.8.3.min.js: http://ziapk.github.io/work/ty-happy/js/vendor/modernizr-2.8.3.min.js
+js/bootstrap.min.js: http://ziapk.github.io/work/ty-happy/js/bootstrap.min.js
+js/jquery.simpleselect.min.js: http://ziapk.github.io/work/ty-happy/js/plugins/jquery.simpleselect.min.js
+js/plugins.js: http://ziapk.github.io/work/ty-happy/js/plugins.js
+js/jquery-1.11.3.min.js: http://ziapk.github.io/work/ty-happy/js/vendor/jquery-1.11.3.min.js
+image/homebodybg.jpg: http://ziapk.github.io/work/ty-happy/images/homebodybg.jpg
+image/logo.png: http://ziapk.github.io/work/ty-happy/images/logo.png
+image/map.jpg: http://ziapk.github.io/work/ty-happy/images/map.jpg
+image/smily.png: http://ziapk.github.io/work/ty-happy/images/smily.png
