@@ -847,11 +847,11 @@ FileETag None
 <IfModule mod_expires.c>
 
     ExpiresActive on
-    ExpiresDefault                                      "access plus 1 month"
+    ExpiresDefault                                      "access plus 10 minuts"
 
   # CSS
 
-    ExpiresByType text/css                              "access plus 1 year"
+    ExpiresByType text/css                              "access plus 10 minuts"
 
 
   # Data interchange
@@ -870,8 +870,8 @@ FileETag None
 
   # Favicon (cannot be renamed!) and cursor images
 
-    ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
-    ExpiresByType image/x-icon                          "access plus 1 week"
+    ExpiresByType image/vnd.microsoft.icon              "access plus 10 minuts"
+    ExpiresByType image/x-icon                          "access plus 10 minuts"
 
   # HTML
 
@@ -894,16 +894,16 @@ FileETag None
 
   # Media files
 
-    ExpiresByType audio/ogg                             "access plus 1 month"
-    ExpiresByType image/bmp                             "access plus 1 month"
-    ExpiresByType image/gif                             "access plus 1 month"
-    ExpiresByType image/jpeg                            "access plus 1 month"
-    ExpiresByType image/png                             "access plus 1 month"
-    ExpiresByType image/svg+xml                         "access plus 1 month"
-    ExpiresByType image/webp                            "access plus 1 month"
-    ExpiresByType video/mp4                             "access plus 1 month"
-    ExpiresByType video/ogg                             "access plus 1 month"
-    ExpiresByType video/webm                            "access plus 1 month"
+    ExpiresByType audio/ogg                             "access plus 10 minuts"
+    ExpiresByType image/bmp                             "access plus 10 minuts"
+    ExpiresByType image/gif                             "access plus 10 minuts"
+    ExpiresByType image/jpeg                            "access plus 10 minuts"
+    ExpiresByType image/png                             "access plus 10 minuts"
+    ExpiresByType image/svg+xml                         "access plus 10 minuts"
+    ExpiresByType image/webp                            "access plus 10 minuts"
+    ExpiresByType video/mp4                             "access plus 10 minuts"
+    ExpiresByType video/ogg                             "access plus 10 minuts"
+    ExpiresByType video/webm                            "access plus 10 minuts"
 
 
   # Web fonts
